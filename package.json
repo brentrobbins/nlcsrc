@@ -3,12 +3,10 @@
     "version": "1.0.0",
     "description": "Gulp powered build setup for a static html site",
     "scripts": {
-        "start": "gulp"
+        "start": "gulp",
+        "build": "gulp build"
     },
-    "keywords": [
-        "gulp",
-        "sass"
-    ],
+    "keywords": ["gulp", "sass"],
     "author": "Brent Robbins",
     "license": "ISC",
     "devDependencies": {
