@@ -24,8 +24,6 @@ var js_output = './_site/assets/js/prod';
 var html_input = './*.html';
 var html_output = './_site';
 
-gulp.task('build', [ 'sass', 'js', 'html' ]);
-
 // Wait for html-build, then launch the Server
 gulp.task('browser-sync', [ 'build' ], function() {
 	browserSync.init({
@@ -93,3 +91,5 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('default', [ 'browser-sync', 'images', 'watch' ]);
+
+gulp.task('build', [ 'sass', 'js', 'images', 'html' ]);
