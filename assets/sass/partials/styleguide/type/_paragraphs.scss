@@ -1,11 +1,39 @@
 // paragraphs
 p {
     color: $Nevada;
-    //Gotham Book, Regular
     font-family: 'Gotham-Book--Regular', sans-serif;
     font-size: 20px;
     line-height: 32px;
     &.small {
         font-size: 12px;
+    }
+}
+blockquote {
+    
+    font-family: 'Klinic-Slab--Book';
+    font-size: 36px;
+    line-height: 44px;
+    margin: 50px;
+}
+
+// theme adjustments
+.nlcstar--theme-puerto-rico {
+    blockquote {
+        color: $FreeSpeechAquamarine;
+    }
+}
+.nlcstar--theme-affair {
+    blockquote {
+        color: $Affair;
+    }
+}
+.nlcstar--theme-endeavour {
+    blockquote {
+        color: $Endeavour;
+    }
+}
+.nlcstar--theme-nevada {
+    blockquote {
+        color: $Nevada;
     }
 }

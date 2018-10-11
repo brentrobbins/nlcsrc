@@ -21,7 +21,7 @@ var style_input = './assets/sass/**/*.scss';
 var style_output = './_site/assets/css';
 var js_input = './assets/js/dev/**/*.js';
 var js_output = './_site/assets/js/prod';
-var html_input = './*.html';
+var html_input = ['./_pages/**/*.{html,htm}'];
 var html_output = './_site';
 
 // Wait for html-build, then launch the Server
@@ -40,7 +40,7 @@ gulp.task('browser-sync', [ 'build' ], function() {
 gulp.task('watch', function() {
 	gulp.watch('assets/sass/**', [ 'sass' ]);
 	gulp.watch('assets/js/dev/**', [ 'js' ]);
-	gulp.watch([ '**.html' ], [ 'html' ]);
+	gulp.watch(html_input, [ 'html' ]);
 	gulp.watch('_site/**', [ 'reload' ]);
 });
 gulp.task('reload', function() {

@@ -3,4 +3,12 @@
     padding-top: 55px;
     display: flex;
     justify-content: flex-end;
+    max-width: 1238px;
+    margin: 0 auto;
+}
+body.subpage {
+    .nlcstar--nav-wrapper {
+        border-bottom: solid 1px #C3C5C8;
+        padding-bottom: 20px;
+    }
 }

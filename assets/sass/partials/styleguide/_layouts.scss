@@ -1,5 +1,17 @@
 // sitewide
 .wrapper {
-    max-width: 1238px;
+    max-width: 860px;
     margin: 0 auto;
+}
+body.subpage {
+    .wrapper {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+}
+body.front {
+    .wrapper {
+        max-width: 1238px;
+        margin: 0 auto;
+    }
 }
