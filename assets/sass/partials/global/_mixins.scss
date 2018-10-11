@@ -1,0 +1,5 @@
+// Background opacity passed in a hex and opacity
+@mixin background-opacity($color, $opacity: 0.9) {
+    background: $color;
+    background: rgba($color, $opacity);
+}

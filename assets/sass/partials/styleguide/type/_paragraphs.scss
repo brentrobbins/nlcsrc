@@ -1,0 +1,11 @@
+// paragraphs
+p {
+    color: $Nevada;
+    //Gotham Book, Regular
+    font-family: 'Gotham-Book--Regular', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    &.small {
+        font-size: 12px;
+    }
+}

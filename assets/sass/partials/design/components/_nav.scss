@@ -1,0 +1,23 @@
+.nlcstar--site-nav {
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        margin-right: 60px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            color: $Nevada;
+            font-family: 'Gotham-Black--Regular', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color .5s ease;
+            &:hover {
+                color: $Endeavour;
+            }
+        }
+    }
+}

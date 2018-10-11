@@ -1,0 +1,25 @@
+body.front {
+    background-color: #fff;
+    // front page only header/nav styles
+    .nlcstar--front-header {
+        height: 100vh;
+        background: url('/assets/images/trash-placeholder-bg.png') no-repeat center center;
+        background-size: cover;
+        // overflow: hidden;
+        margin-bottom: 90px;
+    }
+    .nlcstar--front-hero {
+        margin-top: 30px;
+        padding: 200px 130px 150px 130px;
+        background-color: rgba(0, 85, 184, .90);
+        h1,
+        h2 {
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            margin: 0 0 48px 0;
+        }
+    }
+}

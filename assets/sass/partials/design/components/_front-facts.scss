@@ -1,0 +1,67 @@
+.nlcstar--theme-puerto-rico {
+    aside {
+        @include background-opacity($FreeSpeechAquamarine);
+    }
+}
+
+.nlcstar--theme-affair {
+    aside {
+        @include background-opacity($Affair);
+    }
+}
+
+.nlcstar--front-facts {
+    margin: 150px 0;
+    &.left {}
+    &.right {
+        header {
+            order: 2;
+            margin: 0;
+        }
+        figure {
+            order: 1;
+            margin: 280px 0 0 0;
+        }
+        aside {
+            order: 3;
+            margin: -280px 0 0 auto;
+        }
+    }
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    header {
+        width: 45%;
+    }
+    figure {
+        margin: 280px 0 0 0;
+        width: 45%;
+        img {
+            max-width: 100%;
+        }
+    }
+    aside {
+        color: #fff;
+        margin: -280px 0 0 0;
+        max-width: 372px;
+        padding: 100px;
+        div {
+            border-bottom: 1px solid #fff;
+        }
+        .number {
+            font-family: 'Gotham-Black--Regular';
+            font-size: 175px;
+        }
+        .suffix-percent {
+            font-family: 'Gotham-Black--Regular';
+            font-size: 72px;
+        }
+        p {
+            color: #fff;
+            font-family: 'Klinic-Slab--Book';
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// call to action link
+.cta {
+    font-family: 'Gotham-Black--Regular';
+    font-size: 20px;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    background: no-repeat right center;
+    padding-right: 38px;
+    &:hover {
+        padding-right: 30px;
+    }
+}
+
+// theme adjustments
+.nlcstar--theme-puerto-rico .cta {
+    color: $PuertoRico;
+    background-image: url(/assets/images/icons/arrow--puerto-rico.svg);
+    &:hover {
+        color: darken($PuertoRico, 10%);
+    }
+}
+
+.nlcstar--theme-affair .cta {
+    color: $Affair;
+    background-image: url(/assets/images/icons/arrow--affair.svg);
+    &:hover {
+        color: darken($Affair, 10%);
+    }
+}
+
+.nlcstar--theme-endeavour .cta {
+    color: $Endeavour;
+    background-image: url(/assets/images/icons/arrow--endeavour.svg);
+    &:hover {
+        color: darken($Endeavour, 10%);
+    }
+}

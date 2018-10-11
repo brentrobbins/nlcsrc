@@ -1,0 +1,28 @@
+{
+    "name": "static-html-gulp-built-tool",
+    "version": "1.0.0",
+    "description": "Gulp powered build setup for a static html site",
+    "scripts": {
+        "start": "gulp"
+    },
+    "keywords": [
+        "gulp",
+        "sass"
+    ],
+    "author": "Brent Robbins",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.24.7",
+        "eslint": "^5.6.1",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-filesize": "0.0.6",
+        "gulp-jshint": "^2.1.0",
+        "gulp-plumber": "^1.2.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uglify": "^3.0.1",
+        "gulp-html": "^0.5.0"
+    },
+    "dependencies": {}
+}

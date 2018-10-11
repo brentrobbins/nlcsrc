@@ -1,0 +1,133 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Gotham-Black--Regular';
+    font-size: 72px;
+    line-height: 80px;
+}
+
+h2 {
+    font-family: 'Klinic-Slab--Book';
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h3 {
+    font-family: 'Gotham-Black--Regular';
+    font-size: 60px;
+    line-height: 66px;
+}
+
+h4 {
+    font-family: 'Gotham-Black--Regular';
+    font-size: 72px;
+    line-height: 80px;
+}
+
+h5 {
+    font-family: 'Gotham-Black--Regular';
+    font-size: 72px;
+    line-height: 80px;
+}
+
+h6 {
+    font-family: 'Gotham-Black--Regular';
+    font-size: 72px;
+    line-height: 80px;
+}
+
+// theme adjustments
+.nlcstar--theme-puerto-rico {
+    h1,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $PuertoRico;
+        & a:hover {
+            color: darken($PuertoRico, 10%);
+        }
+    }
+    h2 {
+        color: $FreeSpeechAquamarine;
+        & a:hover {
+            color: darken($FreeSpeechAquamarine, 10%);
+        }
+    }
+}
+
+.nlcstar--theme-affair {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $Affair;
+        & a:hover {
+            color: darken($Affair, 10%);
+        }
+    }
+}
+
+.nlcstar--theme-endeavour {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $Endeavour;
+        & a:hover {
+            color: darken($Endeavour, 10%);
+        }
+    }
+}
+
+.nlcstar--theme-nevada {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $Nevada;
+        & a:hover {
+            color: darken($Nevada, 10%);
+        }
+    }
+}
+
+
+/*
+
+Graph Section h3:
+- Gotham Black, Regular
+- size: 60, lh: 66
+- Color: Nevada theme
+
+Page Sub Title (h2):
+- Klinic Slab, Book
+- size: 36, lh: 44
+  - Case Studies: 'Affair'
+  - The Problem: 'Endeavour'
+
+Page Heading Title (h3):
+- Gotham Black, Regular
+- size: 48, lh: 80
+  - Case Studies: 'Affair'
+  - The Problem: 'Endeavour'
+
+Page Heading Title (h4):
+- Gotham Black, Regular
+- size: 30, lh: 66
+  - Case Studies: 'Affair'
+  - The Problem: 'Endeavour'
+*/
