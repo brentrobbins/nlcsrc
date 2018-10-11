@@ -92,4 +92,4 @@ gulp.task('fonts', function() {
 
 gulp.task('default', [ 'browser-sync', 'images', 'watch' ]);
 
-gulp.task('build', [ 'sass', 'js', 'images', 'html' ]);
+gulp.task('build', [ 'sass', 'js', 'html' ]);
