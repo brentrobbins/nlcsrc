@@ -9,9 +9,16 @@
         @include background-opacity($Affair);
     }
 }
+.nlcstar--theme-endeavour {
+    aside {
+        @include background-opacity($Endeavour);
+    }
+}
+
+
 
 .nlcstar--front-facts {
-    margin: 150px 0;
+    padding: 150px 0;
     &.left {}
     &.right {
         header {
@@ -46,7 +53,7 @@
         margin: -280px 0 0 0;
         max-width: 372px;
         padding: 100px;
-        div {
+        .data-wrap {
             border-bottom: 1px solid #fff;
         }
         .number {
@@ -57,11 +64,52 @@
             font-family: 'Gotham-Black--Regular';
             font-size: 72px;
         }
+        .suffix-text {
+            font-family: 'Gotham-Black--Regular';
+            font-size: 36px;
+        }
         p {
             color: #fff;
             font-family: 'Klinic-Slab--Book';
             font-size: 30px;
             line-height: 36px;
+        }
+    }
+    &.last {
+        background: url('/assets/images/the-way-forward--placeholder.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 90px 0 220px 90px;
+        header {
+            width: 50%;
+            h3 {
+                margin: 0;
+            }
+        }
+    }
+    &.wad-of-trash {
+        background: url('/assets/images/wad-of-trash--placeholder.jpg') no-repeat center bottom;
+        
+    }
+    &.floating-can {
+        background: url('/assets/images/floating-can--placeholder.jpg') no-repeat center bottom;
+    }
+    &.floating-water-bottle {
+        background: url('/assets/images/floating-water-bottle--placeholder.jpg') no-repeat center 430px;
+    }
+    &.graph {
+        width: 956px;
+        margin: 0 auto;
+        padding-bottom: 70px;
+        header {
+            width: 100%;
+            margin: 0 0 0 92px;
+            h3 {
+                margin: 0;
+            }
+        }
+        figure {
+            width: 100%;
+            margin: 0;
         }
     }
 }

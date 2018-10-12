@@ -51,9 +51,9 @@ gulp.task('js', function() {
 	return gulp
 		.src(js_input)
 		.pipe(plumber())
-		.pipe(sourcemaps.init())
+		// .pipe(sourcemaps.init())
 		.pipe(uglify())
-		.pipe(sourcemaps.write())
+		// .pipe(sourcemaps.write())
 		.pipe(plumber.stop())
 		.pipe(size())
 		.pipe(gulp.dest(js_output))

@@ -1,3 +1,20 @@
+### Tech Stack
+CHARTIST.JS SIMPLE RESPONSIVE CHARTS
+https://gionkunz.github.io/chartist-js/index.html
+
+Tilt images
+https://micku7zu.github.io/vanilla-tilt.js/
+https://github.com/micku7zu/vanilla-tilt.js/
+
+How to test if an element is in the viewport with vanilla JavaScript
+https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
+
+Rellax is a buttery smooth, super lightweight (1021bytes gzipped), vanilla javascript parallax library. Update: Rellax now works on mobile (v1.0.0).
+https://github.com/dixonandmoe/rellax
+
+LAZY LOAD IMAGES?
+
+
 ### Global
 Site Width: 1238px ?
 
