@@ -1,24 +1,59 @@
-body.front {   
+// body.front {
+//     .nlcstar--front-header {
+//         height: 100vh;
+//         background: url('/assets/images/trash-placeholder-bg.png') no-repeat center center;
+//         background-size: cover;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-flow: column;
+//         .wrapper {
+//             max-width: 1238px;
+//             margin: 0 auto 70px auto;
+//             flex: 1;
+//             background-color: rgba(0, 85, 184, .90);
+//             .nlcstar--front-hero {
+//                 padding: 0 190px 0 190px;
+//                 display: flex;
+//                 flex-flow: column;
+//                 align-items: center;
+//                 justify-content: center;
+//                 height: 100%;
+//                 h1,
+//                 h2 {
+//                     color: #fff;
+//                     padding: 0;
+//                     margin: 0;
+//                 }
+//                 h1 {
+//                     margin: 0 0 48px 0;
+//                 }
+//             }
+//         }
+//     }
+// }
+body.front {
     .nlcstar--front-header {
-        height: 100vh;
+        // height: 100vh;
         background: url('/assets/images/trash-placeholder-bg.png') no-repeat center center;
         background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: column;
-        .wrapper {
-            max-width: 1238px;
-            margin: 0 auto 70px auto;
+        padding: 0 25px;
+        .nlcstar--front-hero-wrapper {
+            width: 100%;
+            //margin: 0 25px 25px 25px;
             flex: 1;
             background-color: rgba(0, 85, 184, .90);
-            .nlcstar--front-hero {
-                padding: 0 190px 0 190px;
+            .nlcstar--front-hero-content {
+                padding: 70px;
                 display: flex;
                 flex-flow: column;
                 align-items: center;
                 justify-content: center;
-                height: 100%;
+                //  height: 100%;
                 h1,
                 h2 {
                     color: #fff;
@@ -28,6 +63,11 @@ body.front {
                 h1 {
                     margin: 0 0 48px 0;
                 }
+            }
+            @media screen and (min-width: 1290px) {
+                //margin: 0;
+                max-width: 1240px;
+                margin: 0 auto 70px auto;
             }
         }
     }

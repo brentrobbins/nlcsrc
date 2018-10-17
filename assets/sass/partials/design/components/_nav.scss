@@ -1,9 +1,40 @@
+.navbar-menu {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    &.open {
+        opacity: 1;
+        background-color: rgba(0, 85, 184, .90);
+        transition: .2s ease-in-out;
+    }
+    @media screen and (min-width: 980px) {
+        position: relative;
+        opacity: 1;
+        width: auto;
+        margin-right: 25px;
+        text-align: right;
+    }
+    @media screen and (min-width: 1224px) {
+        width: auto;
+        margin: 0;
+    }
+}
+
 .nlcstar--site-nav {
     padding: 0;
     margin: 0;
+    opacity: 0;
+    // height: 100%;
     li {
         display: inline-block;
-        margin-right: 60px;
+        margin-right: 25px;
         &:last-child {
             margin-right: 0;
         }
@@ -20,4 +51,34 @@
             }
         }
     }
+    @media screen and (min-width: 760px) {
+        opacity: 1;
+        display: flex;
+        justify-content: space-around;
+        li {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 1224px) {
+        li {
+            margin-right: 60px;
+        }
+    }
+    &.open {
+        width: 100%;
+        height: 100%;
+        margin: 135px 0 0 0;
+        opacity: 1;
+        li {
+            display: block;
+            margin: 20px 25px 0 25px;
+            padding: 0 0 20px 0;
+            border-bottom: solid 1px white;
+            a {
+                color: #fff;
+            }
+        }
+    }
 }
+
+.navbar-burger {}
