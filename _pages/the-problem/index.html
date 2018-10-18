@@ -18,8 +18,11 @@
     <meta property="og:image" content="" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="/assets/css/style.css" media="screen">
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/assets/js/prod/modernizr.js"></script>
+    <script src="/assets/js/prod/barba.min.js"></script>
 
 </head>
 
@@ -29,13 +32,16 @@
         <nav class="nlcstar--nav-wrapper">
 
             <a class="nlcstar--site-logo" href="/">
-                <img src="/assets/images/logo.svg" alt="Site Logo">
+                <svg width="251" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M.864 15v-1.2h2.328V1.584H.864v-1.2h6.648c2.664 0 5.688 1.104 5.688 4.344 0 2.208-1.392 3.576-3.504 4.104l2.736 4.968h2.232V15h-3.168L8.304 9.168H4.632V13.8H6.96V15H.864zm3.768-7.008h2.904c2.832 0 4.2-1.2 4.2-3.192 0-2.016-1.368-3.216-4.2-3.216H4.632v6.408zM17.936 15v-1.2h2.328V1.584h-2.328v-1.2h11.64V4.32h-1.344V1.584h-6.528v5.448h6.6v1.2h-6.6V13.8h6.576v-2.736h1.344V15H17.936zm18.656 0v-1.2h2.472V1.584h-4.368v2.64h-1.32V.384h12.792v3.84h-1.32v-2.64h-4.344V13.8h2.448V15h-6.36zm12.968 0v-1.2h2.328V1.584H49.56v-1.2h6.096v1.2h-2.328v5.424h8.736V1.584h-2.328v-1.2h6.096v1.2h-2.328V13.8h2.328V15h-6.096v-1.2h2.328V8.256h-8.736V13.8h2.328V15H49.56zm20 0v-1.2h2.328V1.584H69.56v-1.2h6.096v1.2h-2.328V13.8h2.328V15H69.56zm9.824 0v-1.2h2.328V1.584h-2.328v-1.2H83.2l8.808 12.288V1.584H89.68v-1.2h6v1.2h-2.328V15h-1.296L83.08 2.496V13.8h2.328V15h-6.024zm31.328 0l-6.528-7.32v-.144l5.832-5.976h-2.208V.384h5.904v1.2h-2.016l-5.76 5.976 5.64 6.24h2.304V15h-3.168zm-11.544 0v-1.2h2.328V1.584h-2.328v-1.2h6.072v1.2h-2.304V13.8h2.4V15h-6.168zm25.024 0v-1.2h2.328V1.584h-2.328v-1.2h6.648c2.664 0 5.688 1.104 5.688 4.344 0 2.208-1.392 3.576-3.504 4.104l2.736 4.968h2.232V15h-3.168l-3.192-5.832h-3.672V13.8h2.328V15h-6.096zm3.768-7.008h2.904c2.832 0 4.2-1.2 4.2-3.192 0-2.016-1.368-3.216-4.2-3.216h-2.904v6.408zM141.264 15v-1.2h2.328V1.584h-2.328v-1.2h11.64V4.32h-1.344V1.584h-6.528v5.448h6.6v1.2h-6.6V13.8h6.576v-2.736h1.344V15h-11.688zm23.672.288c-4.392 0-7.704-2.784-7.704-7.584 0-4.44 2.832-7.608 7.752-7.608 1.968 0 3.816.528 4.992 1.104v3.456h-1.368V1.968c-.96-.384-2.328-.624-3.552-.624-3.648 0-6.336 2.184-6.336 6.336 0 4.368 3 6.36 6.312 6.36 1.896 0 3.696-.648 4.992-1.416v1.368c-1.128.648-2.952 1.296-5.088 1.296zM177.424 15v-1.2h2.352V9.552l-4.944-7.968h-2.04v-1.2h6.048v1.2h-2.424l4.08 6.672 4.08-6.672h-2.4v-1.2h5.976v1.2h-2.04l-4.896 7.92V13.8h2.352V15h-6.144zm13.448 0v-1.2h2.328V1.584h-2.328v-1.2h6.36v1.2h-2.592V13.8h6.624v-2.88h1.344V15h-11.736zm15.104 0v-1.2h2.328V1.584h-2.328v-1.2h6.096v1.2h-2.328V13.8h2.328V15h-6.096zm9.824 0v-1.2h2.328V1.584H215.8v-1.2h3.816l8.808 12.288V1.584h-2.328v-1.2h6v1.2h-2.328V15h-1.296l-8.976-12.504V13.8h2.328V15H215.8zm27.488.288c-4.944 0-7.8-3.072-7.8-7.536 0-4.392 2.808-7.656 7.848-7.656 2.16 0 4.152.6 5.352 1.104v3.288h-1.368V1.992c-.984-.312-2.424-.672-3.936-.672-4.056 0-6.456 2.568-6.456 6.408 0 3.672 2.16 6.336 6.336 6.336 1.68 0 3.096-.432 4.224-.888V8.688h-3.768V7.512h6.624v1.176h-1.512v5.256c-1.128.552-3.024 1.344-5.544 1.344z" fill="#6A6C6E" fill-rule="evenodd"/></svg>
             </a>
 
-            <div class="navbar-burger burger" data-target="navMenuColorlight-example">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="navbar-burger">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
 
@@ -52,40 +58,50 @@
         </nav>
     </header>
 
-    <main id="content" class="container nlcstar--theme-endeavour">
-        <div class="wrapper">
-            <header class="main-header">
-                <h1>The Problem</h1>
-                <h2>The Challenge Our Current System Faces</h2>
-                <figure>
-                    <img src="/assets/images/the-problem-placeholder.png" alt="placeholder">
-                </figure>
-            </header>
-            <section class="">
-                <p>For years, recycling has been a success in America. Since the 1960s, recycling programs picked up steam and commodities markets developed. Local governments were able to fund their own programs through the sale of the materials collected. Participation increased and untold tons of waste were diverted from landfills across the country.</p>
-                <p>Now, we need to rethink recycling as a country, and continue to progress to a zero-waste system. Why? There are dozens of challenges hurting recycling program’s progress.</p>
-                
-                <h3>We Create A Lot Of Trash</h3>
-                <p>Cities, as the center of economic life, naturally generate more waste. Cities generate around 85% of our global GDP, but they consume about half of the world’s resources. Over 50% of the current world’s population lives in cities and future predictions show that amount increasing. In 2012, cities generated a total of <strong>1.3 billion tons</strong> of solid waste, costing $205 billion to manage. Municipal solid waste is expected to rise by 70% to 2.2 billion tons annually by 2025, costing $375 billion per year to manage.</p>
-                
-                <h3>Recycling Programs Are Not Universal</h3>
-                <p>Recycling is the most common way to divert waste, but it doesn’t help as many people as it could. Although 94% of US residents have access to some type of recycling services, 73% of residents have curbside recycling, while 21% only have access to drop-off programs.</p>
-                
-                <blockquote>
-                        73% of residents have curbside recycling, while 21% only have access to drop-off programs
-                </blockquote>
+    <main id="barba-wrapper" class="container nlcstar--theme-endeavour">
+        <div class="barba-container">
+            <div class="wrapper">
+                <header class="main-header">
+                    <h1>The Problem</h1>
+                    <h2>The Challenge Our Current System Faces</h2>
+                    <figure>
+                        <img src="/assets/images/the-problem-placeholder.png" alt="placeholder">
+                    </figure>
+                </header>
+                <section class="">
+                    <p>For years, recycling has been a success in America. Since the 1960s, recycling programs picked up steam and commodities markets developed. Local governments were able to fund their own programs through the sale of the materials collected.
+                        Participation increased and untold tons of waste were diverted from landfills across the country.</p>
+                    <p>Now, we need to rethink recycling as a country, and continue to progress to a zero-waste system. Why? There are dozens of challenges hurting recycling program’s progress.</p>
 
-                <p>Some cities have no or limited curbside recycling pickup, others have very robust systems that even include curbside food waste/compost pickup—based largely on the regional market availability, financing, and scale.</p>
-                <p>Other programs are even less common in cities, like composting programs, yard trimming services, food waste laws and recyclable glass or plastic container programs.</p>
-                
-                <h4>Lack of Consistency in Entire System</h4>
-                <p>There is inconsistency between commercial and residential sectors in many cities, and some cities do not regulate the commercial sector. When regulation is poor, a lack of services often occurs in landlord/tenant scenarios, both in large multi-family and commercial buildings.</p>
-                <p>The private sector has difficulty adapting between separate markets based on system differences. For example, a large company with multiple office/retail/manufacturing locations must adapt internal policies and methods to suit the location.</p>
-                
-                <h3>Inconsistencies in Streams</h3>
-                <p>There are inconsistencies in recycling streams across the country—single vs. multi stream, what is accepted in the streams, and how to divide items in different streams. These inconsistencies also lead to disagreements about who should be responsible for the separation of recyclables—source-separated puts burden on residents, businesses and government/haulers, while single stream puts burden on processors.</p>
-                <p>Inconsistencies between government and private sectors when establishing recycled commodities creates costly processing burdens for items such as plastic bags and film.</p>
-            </section>
+                    <h3>We Create A Lot Of Trash</h3>
+                    <p>Cities, as the center of economic life, naturally generate more waste. Cities generate around 85% of our global GDP, but they consume about half of the world’s resources. Over 50% of the current world’s population lives in cities and
+                        future predictions show that amount increasing. In 2012, cities generated a total of <strong>1.3 billion tons</strong> of solid waste, costing $205 billion to manage. Municipal solid waste is expected to rise by 70% to 2.2 billion
+                        tons annually by 2025, costing $375 billion per year to manage.</p>
+
+                    <h3>Recycling Programs Are Not Universal</h3>
+                    <p>Recycling is the most common way to divert waste, but it doesn’t help as many people as it could. Although 94% of US residents have access to some type of recycling services, 73% of residents have curbside recycling, while 21% only
+                        have access to drop-off programs.</p>
+
+                    <blockquote>
+                        73% of residents have curbside recycling, while 21% only have access to drop-off programs
+                    </blockquote>
+
+                    <p>Some cities have no or limited curbside recycling pickup, others have very robust systems that even include curbside food waste/compost pickup—based largely on the regional market availability, financing, and scale.</p>
+                    <p>Other programs are even less common in cities, like composting programs, yard trimming services, food waste laws and recyclable glass or plastic container programs.</p>
+
+                    <h4>Lack of Consistency in Entire System</h4>
+                    <p>There is inconsistency between commercial and residential sectors in many cities, and some cities do not regulate the commercial sector. When regulation is poor, a lack of services often occurs in landlord/tenant scenarios, both in
+                        large multi-family and commercial buildings.</p>
+                    <p>The private sector has difficulty adapting between separate markets based on system differences. For example, a large company with multiple office/retail/manufacturing locations must adapt internal policies and methods to suit the
+                        location.
+                    </p>
+
+                    <h3>Inconsistencies in Streams</h3>
+                    <p>There are inconsistencies in recycling streams across the country—single vs. multi stream, what is accepted in the streams, and how to divide items in different streams. These inconsistencies also lead to disagreements about who should
+                        be responsible for the separation of recyclables—source-separated puts burden on residents, businesses and government/haulers, while single stream puts burden on processors.</p>
+                    <p>Inconsistencies between government and private sectors when establishing recycled commodities creates costly processing burdens for items such as plastic bags and film.</p>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -119,9 +135,7 @@
 </script> -->
 
     <!-- Remove if you use Critical CSS-->
-    <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-
-    <script src="/assets/js/prod/modernizr.js"></script>
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" media="screen"> -->
 
     <script src="/assets/js/prod/script.js"></script>
 

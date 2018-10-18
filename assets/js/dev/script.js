@@ -2,6 +2,12 @@ function ready() {
 	// do your stuff
 	console.log('locked and loaded 🚀');
 
+	// Update Analytics
+	// Barba.Dispatcher.on('initStateChange', function() {
+	// 	//ga('send', 'pageview', location.pathname);
+	// 	console.log('Barba.Dispatcher');
+	// });
+
 	// Animate the mobile menu
 	document.querySelector('#nav-icon').addEventListener('click', function(e) {
 		document.querySelector('#nav-icon').classList.toggle('open');
@@ -23,3 +29,36 @@ if (document.readyState !== 'loading') {
 	// the document hasn't finished loading/parsing yet so let's add an event handler
 	document.addEventListener('DOMContentLoaded', ready);
 }
+
+// $(document).ready(function() {
+// 	console.log('Barba');
+// 	var transEffect = Barba.BaseTransition.extend({
+// 		start: function start() {
+// 			var _this2 = this;
+
+// 			this.newContainerLoading.then(function(val) {
+// 				return _this2.fadeInNewcontent($(_this2.newContainer));
+// 			});
+// 		},
+// 		fadeInNewcontent: function fadeInNewcontent(nc) {
+// 			nc.hide();
+// 			var _this = this;
+// 			$(this.oldContainer).fadeOut(500).promise().done(function() {
+// 				nc.css('visibility', 'visible');
+// 				nc.fadeIn(500, function() {
+// 					_this.done();
+// 				});
+// 				$('html, body').animate(
+// 					{
+// 						scrollTop: 300
+// 					},
+// 					1000
+// 				);
+// 			});
+// 		}
+// 	});
+// 	Barba.Pjax.getTransition = function() {
+// 		return transEffect;
+// 	};
+// 	Barba.Pjax.start();
+// });

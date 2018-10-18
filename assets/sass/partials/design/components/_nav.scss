@@ -13,6 +13,7 @@
         opacity: 1;
         background-color: rgba(0, 85, 184, .90);
         transition: .2s ease-in-out;
+        z-index: 2;
     }
     @media screen and (min-width: 980px) {
         position: relative;
@@ -51,7 +52,7 @@
             }
         }
     }
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 980px) {
         opacity: 1;
         display: flex;
         justify-content: space-around;

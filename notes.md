@@ -14,14 +14,43 @@ https://github.com/dixonandmoe/rellax
 
 LAZY LOAD IMAGES?
 
+PAGE ANIMATIONS:
+https://github.com/luruke/barba.js/ http://barbajs.org/
+https://github.com/minimill/pangea.js
+https://github.com/miguel-perez/smoothState.js/
+
+
 
 # To Do List:
+- [] GLOBAL:
 - [] Mobile/Responsive: header & menu
 - [x] Mobile/Responsive: footer
+
+- [] FRONT:
+- [] Desktop: front page 'hero'
+- [] Mobile/Responsive: front page 'hero'
+- [] Desktop: front page 'graph'
+- [] Mobile/Responsive: front page 'graph'
+- [] Desktop: front page 'facts'
 - [] Mobile/Responsive: front page 'facts'
 
+- [] THE PROBLEM:
+- 
 
+- [] RECOMMENDATIONS:
+- 
 
+- [] CASE STUDIES (list view):
+- 
+
+- [] CASE STUDIES (full nodes):
+- 
+
+- [] ANIMATIONS:
+- [] Tilt Images
+- [] Lazy Load
+- [] Parallax
+- []
 
 .fill {
     display: flex;

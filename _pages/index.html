@@ -18,9 +18,11 @@
     <meta property="og:image" content="" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="/assets/css/style.css" media="screen">
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/assets/js/prod/modernizr.js"></script>
+    <script src="/assets/js/prod/barba.min.js"></script>
 </head>
 
 <body class="front">
@@ -62,109 +64,110 @@
         </section>
     </header>
 
-    <main id="content" class="container">
-        <div class="wrapper">
+    <main id="barba-wrapper" class="container">
+        <div class="barba-container">
+            <div class="wrapper">
 
-            <section class="nlcstar--front-facts nlcstar--theme-puerto-rico left wad-of-trash">
-                <header>
-                    <h3>Recycling Is A Success Story</h3>
-                    <p>Since the 1960s, increased rates of recycling has been one of the most widespread success stories in American conservation and sustainability.</p>
-                </header>
-                <figure>
-                    <img src="/assets/images/recycling-is-a-success-story--placeholder.jpg" alt="Recycling Is A Success Story">
-                </figure>
-                <aside>
-                    <div class="data-wrap">
-                        <span class="number">95</span><span class="suffix-percent">%</span>
-                    </div>
-                    <p>of Americans have access to some type of recycling services</p>
-                </aside>
-            </section>
+                <section class="nlcstar--front-facts nlcstar--theme-puerto-rico left wad-of-trash">
+                    <header>
+                        <h3>Recycling Is A Success Story</h3>
+                        <p>Since the 1960s, increased rates of recycling has been one of the most widespread success stories in American conservation and sustainability.</p>
+                    </header>
+                    <figure>
+                        <img src="/assets/images/recycling-is-a-success-story--placeholder.jpg" alt="Recycling Is A Success Story">
+                    </figure>
+                    <aside>
+                        <div class="data-wrap">
+                            <span class="number">95</span><span class="suffix-percent">%</span>
+                        </div>
+                        <p>of Americans have access to some type of recycling services</p>
+                    </aside>
+                </section>
 
-            <section class="nlcstar--front-facts nlcstar--theme-affair right floating-water-bottle">
-                <header>
-                    <h3>Challenges We Face</h3>
-                    <p>Americans create a lot of trash and recycling systems are not universal, creating inconsistencies in programs and streams, difficulty in maintaining clean streams, and the issue of <em>Who Pays For This</em>?</p>
+                <section class="nlcstar--front-facts nlcstar--theme-affair right floating-water-bottle">
+                    <header>
+                        <h3>Challenges We Face</h3>
+                        <p>Americans create a lot of trash and recycling systems are not universal, creating inconsistencies in programs and streams, difficulty in maintaining clean streams, and the issue of <em>Who Pays For This</em>?</p>
 
-                    <a href="#" class="cta">Read more about challenges</a>
-                </header>
-                <figure>
-                    <img src="/assets/images/challenges-we-face--placeholder.jpg" alt="Challenges We Face">
-                </figure>
-                <aside>
-                    <div class="data-wrap">
-                        <span class="number">2.2</span><span class="suffix-text">Bil</span>
-                    </div>
-                    <p>tons of municipal solid waste expected by 2025, a 70% increase from [year]</p>
-                </aside>
-            </section>
+                        <a href="#" class="cta">Read more about challenges</a>
+                    </header>
+                    <figure>
+                        <img src="/assets/images/challenges-we-face--placeholder.jpg" alt="Challenges We Face">
+                    </figure>
+                    <aside>
+                        <div class="data-wrap">
+                            <span class="number">2.2</span><span class="suffix-text">Bil</span>
+                        </div>
+                        <p>tons of municipal solid waste expected by 2025, a 70% increase from [year]</p>
+                    </aside>
+                </section>
 
-            <section class="nlcstar--front-facts nlcstar--theme-nevada graph">
-                <header>
-                    <h3>The Rise and Fall of Profitability</h3>
-                    <p>Commodity prices of recyclables are plunging and China, the world’s largest buyer of recyclable goods has announced a new policy restricting imports.</p>
-                </header>
-                <figure>
-                    <img src="/assets/images/graph--placeholder.png" alt="graph placeholder">
-                </figure>
-            </section>
+                <section class="nlcstar--front-facts nlcstar--theme-nevada graph">
+                    <header>
+                        <h3>The Rise and Fall of Profitability</h3>
+                        <p>Commodity prices of recyclables are plunging and China, the world’s largest buyer of recyclable goods has announced a new policy restricting imports.</p>
+                    </header>
+                    <figure>
+                        <img src="/assets/images/graph--placeholder.png" alt="graph placeholder">
+                    </figure>
+                </section>
 
-            <section class="nlcstar--front-facts nlcstar--theme-endeavour left floating-can">
-                <header>
-                    <h3>What If We Stop Recycling?</h3>
-                    <p>Americans create a lot of trash and recycling systems are not universal, creating inconsistencies in programs and streams, difficulty in maintaining clean streams, and the issue of <em>Who Pays For This</em>?</p>
-                </header>
-                <figure>
-                    <img src="/assets/images/what-if-we-stop-recycling--placeholder.jpg" alt="What If We Stop Recycling?">
-                </figure>
-                <aside>
-                    <div class="data-wrap">
-                        <span class="number">15</span><span class="suffix-percent">%</span>
-                    </div>
-                    <p>decrease in landfill capacity in the next five years</p>
-                </aside>
-            </section>
-
-
-
-            <section class="nlcstar--front-facts nlcstar--theme-puerto-rico right wad-of-trash">
-                <header>
-                    <h3>What Can We Do To Fix This Now?</h3>
-                    <p>We can create a circular economy, educate consumers, research our current waste, purchase sustainable products and prioritize new infrastructure options and improve our current technology.</p>
-                    <a href="#" class="cta">Read more about circular economy</a>
-                </header>
-                <figure>
-                    <img src="/assets/images/what-can-we-do-to-fix-this-now--placeholder.jpg" alt="What Can We Do To Fix This Now?">
-                </figure>
-                <aside>
-                    <div class="data-wrap">
-                        <span class="number">515</span><span class="suffix-text">MILL</span>
-                    </div>
-                    <p>fewer metric tons of carbon dioxide emissions may be created by a 75% diversion rate by 2030</p>
-                </aside>
-            </section>
-
-            <section class="nlcstar--front-facts nlcstar--theme-affair left">
-                <header>
-                    <h3>Rethinking Current Strategies</h3>
-                    <p>We need to reimagine funding opportunities for recycling programs, create new partnerships with public sector and private sectors working in tandem and pilot programs that are innovative.</p>
-                    <a href="#" class="cta">Read more about recommendations</a>
-                </header>
-                <figure>
-                    <img src="/assets/images/rethinking-current-strategies--placeholder.jpg" alt="Rethinking Current Strategies">
-                </figure>
-            </section>
-
-            <section class="nlcstar--front-facts nlcstar--theme-endeavour left last">
-                <header>
-                    <h3>The Way Forward</h3>
-                    <p>It may seem overwhelming, but start now. Prioritizing and communicating new ways of thinking about the recycling—prevention first, then reduction, reuse, repurpose, recycle/compost, incinerate/waste-to-energy, then landfill as a last
-                        resort—helps to create a holistic systems overhaul. Many cities are piloting incredibly innovative programs right now.</p>
-                    <a href="#" class="cta">View case studies</a>
-                </header>
-            </section>
+                <section class="nlcstar--front-facts nlcstar--theme-endeavour left floating-can">
+                    <header>
+                        <h3>What If We Stop Recycling?</h3>
+                        <p>Americans create a lot of trash and recycling systems are not universal, creating inconsistencies in programs and streams, difficulty in maintaining clean streams, and the issue of <em>Who Pays For This</em>?</p>
+                    </header>
+                    <figure>
+                        <img src="/assets/images/what-if-we-stop-recycling--placeholder.jpg" alt="What If We Stop Recycling?">
+                    </figure>
+                    <aside>
+                        <div class="data-wrap">
+                            <span class="number">15</span><span class="suffix-percent">%</span>
+                        </div>
+                        <p>decrease in landfill capacity in the next five years</p>
+                    </aside>
+                </section>
 
 
+
+                <section class="nlcstar--front-facts nlcstar--theme-puerto-rico right wad-of-trash">
+                    <header>
+                        <h3>What Can We Do To Fix This Now?</h3>
+                        <p>We can create a circular economy, educate consumers, research our current waste, purchase sustainable products and prioritize new infrastructure options and improve our current technology.</p>
+                        <a href="#" class="cta">Read more about circular economy</a>
+                    </header>
+                    <figure>
+                        <img src="/assets/images/what-can-we-do-to-fix-this-now--placeholder.jpg" alt="What Can We Do To Fix This Now?">
+                    </figure>
+                    <aside>
+                        <div class="data-wrap">
+                            <span class="number">515</span><span class="suffix-text">MILL</span>
+                        </div>
+                        <p>fewer metric tons of carbon dioxide emissions may be created by a 75% diversion rate by 2030</p>
+                    </aside>
+                </section>
+
+                <section class="nlcstar--front-facts nlcstar--theme-affair left">
+                    <header>
+                        <h3>Rethinking Current Strategies</h3>
+                        <p>We need to reimagine funding opportunities for recycling programs, create new partnerships with public sector and private sectors working in tandem and pilot programs that are innovative.</p>
+                        <a href="#" class="cta">Read more about recommendations</a>
+                    </header>
+                    <figure>
+                        <img src="/assets/images/rethinking-current-strategies--placeholder.jpg" alt="Rethinking Current Strategies">
+                    </figure>
+                </section>
+
+                <section class="nlcstar--front-facts nlcstar--theme-endeavour left last">
+                    <header>
+                        <h3>The Way Forward</h3>
+                        <p>It may seem overwhelming, but start now. Prioritizing and communicating new ways of thinking about the recycling—prevention first, then reduction, reuse, repurpose, recycle/compost, incinerate/waste-to-energy, then landfill as
+                            a last resort—helps to create a holistic systems overhaul. Many cities are piloting incredibly innovative programs right now.</p>
+                        <a href="#" class="cta">View case studies</a>
+                    </header>
+                </section>
+
+            </div>
         </div>
     </main>
 
@@ -198,9 +201,7 @@
 </script> -->
 
     <!-- Remove if you use Critical CSS-->
-    <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-
-    <script src="/assets/js/prod/modernizr.js"></script>
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" media="screen"> -->
 
     <script src="/assets/js/prod/script.js"></script>
 
