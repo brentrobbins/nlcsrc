@@ -1,0 +1,77 @@
+.nlcstar--front-chart {
+    .ct-chart {
+        // max-width: 800px;
+        margin: 0 auto;
+    }
+    .ct-series-a .ct-line {
+        stroke: #4abfa9;
+    }
+    .ct-series-a .ct-point {
+        stroke: #4abfa9;
+    }
+    .ct-series-b .ct-line {
+        stroke: #0055bc;
+    }
+    .ct-series-b .ct-point {
+        stroke: #0055bc;
+    }
+    .ct-series-c .ct-line {
+        stroke: #91469c;
+    }
+    .ct-series-c .ct-point {
+        stroke: #91469c;
+    }
+    .ct-vertical {
+        stroke: #000;
+        display: block;
+    }
+    .ct-grids line.ct-horizontal,
+    .ct-grids line.ct-vertical {
+        opacity: 1;
+        stroke: #e1e1e1;
+        stroke-width: 1px;
+        stroke-dasharray: 0px;
+    }
+    .ct-grids .ct-horizontal:not(:first-of-type) {
+        opacity: 0;
+    }
+    .ct-grids .ct-vericle:not(:first-of-type) {
+        opacity: 0;
+    }
+    // * {
+    //     transform-origin: 0px 0px 0px;
+    // }
+    // .ct-line {
+    //     stroke-dasharray: 5px;
+    //     animation: dashoffset 1s linear infinite;
+    // }
+    // @keyframes dashoffset {
+    //     0% {
+    //         stroke-dashoffset: 0px;
+    //     }
+    //     100% {
+    //         stroke-dashoffset: -20px;
+    //     }
+    // }
+    // @keyframes bouncing-stroke {
+    //     0% {
+    //         stroke-width: 5px;
+    //     }
+    //     50% {
+    //         stroke-width: 10px;
+    //     }
+    //     100% {
+    //         stroke-width: 5px;
+    //     }
+    // }
+    // @keyframes exploding-stroke {
+    //     0% {
+    //         stroke-width: 2px;
+    //         opacity: 1;
+    //     }
+    //     100% {
+    //         stroke-width: 20px;
+    //         opacity: 0;
+    //     }
+    // }
+}

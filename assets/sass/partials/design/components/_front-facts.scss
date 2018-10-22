@@ -78,10 +78,11 @@
             line-height: 36px;
             margin: 30px 50px;
         }
+        
     }
-    &.wad-of-trash {
-        background: url('/assets/images/wad-of-trash--placeholder.jpg') no-repeat center bottom;
-    }
+    // &.wad-of-trash {
+    //     background: url('/assets/images/wad-of-trash--placeholder.jpg') no-repeat center bottom;
+    // }
     &.floating-can {
         background: url('/assets/images/floating-can--placeholder.jpg') no-repeat center bottom;
     }
@@ -98,22 +99,28 @@
             }
         }
     }
-    // &.graph {
-    //     width: 956px;
-    //     margin: 0 auto;
-    //     padding-bottom: 70px;
-    //     header {
-    //         width: 100%;
-    //         margin: 0 0 0 92px;
-    //         h3 {
-    //             margin: 0;
-    //         }
-    //     }
-    //     figure {
-    //         width: 100%;
-    //         margin: 0;
-    //     }
-    // }
+    &.chart {
+        width: 956px;
+        margin: 0 auto;
+        //padding-bottom: 70px;
+        padding: 0;
+        header {
+            width: 100%;
+            margin: 0 0 0 92px;
+            h3 {
+                margin: 0;
+            }
+        }
+        figure {
+            width: 100%;
+            margin: 0;
+        }
+        aside.nlcstar--front-chart {
+            width: 100%;
+            margin: 70px 0 0 0;
+            padding: 0;
+        }
+    }
     @media screen and (min-width: 760px) and (max-width: 1223px) {
         &.right {
             header {
@@ -168,6 +175,15 @@
         &.last {
             padding: 90px 0 220px 90px;
         }
+        .nlcstar--front-facts--inline-image {
+            width: 200px;
+            height: 200px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
         // padding-top: 280px;
         // margin-top: 100px;
         // header {
@@ -221,7 +237,8 @@
         }
         figure {
             margin: 160px 0 0 auto;
-            width: 45%;
+            // width: 45%;
+            width: 572px;
             order: 2;
             img {
                 max-width: 100%;
@@ -231,7 +248,7 @@
             order: 3;
             color: #fff;
             margin: -280px 0 0 0;
-            max-width: 372px;
+            width: 572px;
             padding: 100px;
         }
         &.last {

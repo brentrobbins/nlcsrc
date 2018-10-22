@@ -19,6 +19,50 @@ function ready() {
 			document.querySelector('.nlcstar--site-nav').classList.toggle('open');
 		}
 	});
+
+	function loadChart() {
+		var data = {
+			labels: [ "Jan '17", "May '17", "Sep '17", "Jan '18", "Mar  '18", "May '18", "Jul '18" ],
+			series: [
+				[ 100, 140, 130, 160, 110, 90, 60 ],
+				[ 100, 120, 90, 100, 80, 20, 15 ],
+				[ 100, 115, 80, 95, 70, 50, 45 ]
+			]
+		};
+		chart.update((data = data));
+		inview.destroy();
+	}
+
+	// WaypointJS
+	// console.log(chart.update((data = {})));
+	// var waypoint = new Waypoint({
+	// 	element: document.querySelector('.nlcstar--front-facts.nlcstar--theme-nevada.chart'),
+	// 	handler: function(direction) {
+	// 		console.log('You have scrolled to a thing' + direction);
+	// 		//loadChart();
+	// 	},
+	// 	entered: function(direction) {
+	// 		console.log('Entered triggered with direction ' + direction);
+	// 		loadChart();
+	// 	}
+	// });
+	chart.update((data = {}));
+	var inview = new Waypoint.Inview({
+		element: document.querySelector('.nlcstar--front-facts.nlcstar--theme-nevada.chart'),
+		enter: function(direction) {
+			console.log('Enter triggered with direction ' + direction);
+		},
+		entered: function(direction) {
+			console.log('Entered triggered with direction ' + direction);
+			loadChart();
+		},
+		exit: function(direction) {
+			console.log('Exit triggered with direction ' + direction);
+		},
+		exited: function(direction) {
+			console.log('Exited triggered with direction ' + direction);
+		}
+	});
 }
 
 // this is required for the (not so) edge case where your script is loaded after the document has loaded

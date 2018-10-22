@@ -102,14 +102,17 @@
                     </aside>
                 </section>
 
-                <section class="nlcstar--front-facts nlcstar--theme-nevada graph">
+                <section class="nlcstar--front-facts nlcstar--theme-nevada chart">
                     <header>
                         <h3>The Rise and Fall of Profitability</h3>
                         <p>Commodity prices of recyclables are plunging and China, the world’s largest buyer of recyclable goods has announced a new policy restricting imports.</p>
                     </header>
-                    <figure>
+                    <aside class="nlcstar--front-chart">
+                        <div class="ct-chart ct-octave"></div>
+                    </aside>
+                    <!-- <figure>
                         <img src="/assets/images/graph--placeholder.png" alt="graph placeholder">
-                    </figure>
+                    </figure> -->
                 </section>
 
                 <section class="nlcstar--front-facts nlcstar--theme-endeavour left floating-can">
@@ -183,7 +186,7 @@
             </div>
         </section>
     </footer>
-
+    <div class="ct-chart ct-octave"></div>
 
     <!-- Use for Critical CSS-->
     <!-- <script>
@@ -203,10 +206,22 @@
     <!-- Remove if you use Critical CSS-->
     <!-- <link rel="stylesheet" href="/assets/css/style.css" media="screen"> -->
 
+
+
+    <script src="/assets/js/prod/waypoints.js"></script>
+    <script src="/assets/js/prod/inview.js"></script>
+
+    <!-- REPLACE WITH LOCAL FILES: https://gionkunz.github.io/chartist-js/getting-started.html -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <script src="/assets/js/prod/chart.js"></script>
+
     <script src="/assets/js/prod/script.js"></script>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" async></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" async></script>
+
+    <!-- <script>
         var galite = galite || {};
         galite.UA = 'ADD-THE-CLIENTS-UA-HERE';
     </script> -->
