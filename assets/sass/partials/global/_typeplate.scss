@@ -4,18 +4,21 @@
 //Klinic Slab, Book
 @font-face {
     font-family: 'Gotham-Black--Regular';
-    src: url('/assets/fonts/Gotham/gotham-black-webfont.eot');
-    src: url('/assets/fonts/Gotham/gotham-black-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Gotham/gotham-black-webfont.woff') format('woff'), url('/assets/fonts/Gotham/gotham-black-webfont.ttf') format('truetype'), url('/assets/fonts/Gotham/gotham-black-webfont.svg#webfont') format('svg');
+    src: url('/assets/fonts/Gotham/gotham-black-webfont.woff2') format('woff2'), url('/assets/fonts/Gotham/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham-Book--Regular';
-    src: url('/assets/fonts/Gotham/gotham-book-webfont.eot');
-    src: url('/assets/fonts/Gotham/gotham-book-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Gotham/gotham-book-webfont.woff') format('woff'), url('/assets/fonts/Gotham/gotham-book-webfont.ttf') format('truetype'), url('/assets/fonts/Gotham/gotham-book-webfont.svg#webfont') format('svg');
+    src: url('/assets/fonts/Gotham/gotham-book-webfont.woff2') format('woff2'), url('/assets/fonts/Gotham/gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Klinic-Slab--Book';
-    src: url('/assets/fonts/KlinicSlab/klinicslabbook-webfont.eot');
-    src: url('/assets/fonts/KlinicSlab/klinicslabbook-webfont?#iefix') format('embedded-opentype'), url('/assets/fonts/KlinicSlab/klinicslabbook-webfont.woff') format('woff'), url('/assets/fonts/KlinicSlab/klinicslabbook-webfont.ttf') format('truetype'), url('/assets/fonts/KlinicSlab/klinicslabbook-webfont.svg#webfont') format('svg');
+    src: url('/assets/fonts/KlinicSlab/klinicslabbook-webfont.woff2') format('woff2'), url('/assets/fonts/KlinicSlab/klinicslabbook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

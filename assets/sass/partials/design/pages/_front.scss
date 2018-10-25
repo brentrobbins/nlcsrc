@@ -1,44 +1,157 @@
 body.front {
-    .nlcstar--front-header {
-        // height: 100vh;
-        background: url('/assets/images/trash-placeholder-bg.png') no-repeat center center;
-        background-size: cover;
+    #nlcstar--front-header {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        flex-flow: column;
-        padding: 0 25px;
-        .nlcstar--front-hero-wrapper {
-            width: 100%;
-            //margin: 0 25px 25px 25px;
-            flex: 1;
-            background-color: rgba(0, 85, 184, .90);
-            .nlcstar--front-hero-content {
-                padding: 70px;
-                display: flex;
-                flex-flow: column;
-                align-items: center;
-                justify-content: center;
-                //  height: 100%;
-                h1,
-                h2 {
-                    color: #fff;
-                    padding: 0;
-                    margin: 0;
-                }
-                h1 {
-                    margin: 0 0 48px 0;
-                }
-            }
-            @media screen and (min-width: 1290px) {
-                //margin: 0;
-                max-width: 1240px;
-                margin: 0 auto 70px auto;
-            }
+        opacity: 1;
+        &:after {
+            transition: all 1s ease-in-out;
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: url(/assets/images/nlcstar--front-header_bg.jpg) no-repeat center center;
+            background-size: cover;
+            opacity: 0;
+        }
+        &.animate:after {
+            transition: all 2s ease-in-out;
+            opacity: 1;
         }
     }
 }
 
+#nlcstar--front-hero-wrapper {
+    background-color: #0055b8;
+    height: 100vh;
+    width: 100%;
+    transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
+    margin: 40px auto 70px auto;
+    opacity: 0;
+    display: flex;
+    z-index: 1;
+    h1,
+    h2 {
+        opacity: 0;
+        top: -5px;
+        position: relative;
+        &.animate {
+            opacity: 1;
+            top: 0px;
+            transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
+        }
+    }
+    &.animate {
+        opacity: 1;
+        max-width: 1240px;
+        margin: 50px auto 70px auto;
+    }
+}
+
+// #nlcstar--front-hero-wrapper {
+//     // width: 100%;
+//     // background-color: rgba(0, 85, 184, .90);
+//     // z-index: 2;
+//     background-color: #0055b8;
+//     height: 100vh;
+//     width: 100%;
+//     transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+//     margin: 40px auto 70px auto;
+//     opacity: 0;
+//     display: flex;
+//     &.animate {
+//         opacity: 1;
+//         // max-width: 1240px;
+//         // margin: 50px auto 70px auto;
+//         //transition: all .4s ease-in-out;
+//     }
+//     @media screen and (min-width: 1290px) {
+//         //margin: 0;
+//         max-width: 1240px;
+//         margin: 0 auto 70px auto;
+//     }
+// }
+.nlcstar--front-hero-content {
+    width: 100%;
+    padding: 0 190px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    //  height: 100%;
+    h1,
+    h2 {
+        color: #fff;
+        //padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    h1 {
+        margin: 0 0 48px 0;
+    }
+}
+
+// .nlcstar--front-hero-can {
+//     background: url('/assets/images/can.jpg') no-repeat center center;
+//     background-size: cover;
+//     width: 332px;
+//     height: 844px;
+//     position: absolute;
+//     top: -35px;
+//     left: -200px;
+//     transform: rotate(45deg);
+//     z-index: 1;
+// }
+// .nlcstar--front-hero-can2 {
+//     background: url('/assets/images/can.jpg') no-repeat center center;
+//     background-size: cover;
+//     width: 332px;
+//     height: 844px;
+//     position: absolute;
+//     top: -280px;
+//     left: 470px;
+//     transform: rotate(-215deg);
+//     z-index: 1;
+// }
+// .nlcstar--front-hero-wad {
+//     background: url('/assets/images/wad-of-paper_small.jpg') no-repeat center center;
+//     background-size: cover;
+//     width: 451px;
+//     height: 356px;
+//     position: absolute;
+//     top: -100px;
+//     right: -100px;
+//     z-index: 1;
+// }
+// .nlcstar--front-hero-wad2 {
+//     background: url('/assets/images/wad-of-paper_small.jpg') no-repeat center center;
+//     background-size: cover;
+//     width: 451px;
+//     height: 356px;
+//     position: absolute;
+//     bottom: -50px;
+//     left: 20px;
+//     z-index: 0;
+// }
+// .nlcstar--front-hero-bottle {
+//     background: url('/assets/images/water-bottle.jpg') no-repeat center center;
+//     background-size: cover;
+//     width: 321px;
+//     height: 1199px;
+//     position: absolute;
+//     bottom: -600px;
+//     right: 400px;
+//     z-index: 1;
+//     transform: rotate(45deg);
+// }
+//
+//
 // body.front {
 //     .nlcstar--front-header {
 //         height: 100vh;

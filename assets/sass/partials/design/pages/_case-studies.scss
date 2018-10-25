@@ -3,4 +3,12 @@ body.subpage.case-studies {
         margin: 40px 0;
         padding: 0;
     }
+    .nlcstar--site-nav li a.navbar-item {
+        &:hover {
+            color: $Affair;
+        }
+        &.active {
+            color: $Affair;
+        }
+    }
 }

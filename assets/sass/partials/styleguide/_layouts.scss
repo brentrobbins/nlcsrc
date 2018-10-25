@@ -3,15 +3,33 @@
     max-width: 860px;
     margin: 0 auto;
 }
-body.subpage {
-    .wrapper {
-        max-width: 860px;
-        margin: 0 auto;
-    }
-}
+
 body.front {
     .wrapper {
-        max-width: 1238px;
-        margin: 0 auto;
+        margin: 0 25px;
+    }
+}
+
+@media screen and (min-width: 1338px) {
+    body.front {
+        .wrapper {
+            max-width: 1238px;
+            margin: 0 auto;
+        }
+    }
+}
+
+body.subpage {
+    .wrapper {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (min-width: 910px) {
+    body.subpage {
+        .wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+        }
     }
 }

@@ -21,7 +21,8 @@ var style_input = './assets/sass/**/*.scss';
 var style_output = './_site/assets/css';
 var js_input = './assets/js/dev/**/*.js';
 var js_output = './_site/assets/js/prod';
-var html_input = ['./_pages/**/*.{html,htm}'];
+var html_input = [ './_pages/**/*.{html,htm}' ];
+//var html_input = [ './_pages/rellax.html' ];
 var html_output = './_site';
 
 // Wait for html-build, then launch the Server
@@ -41,23 +42,23 @@ gulp.task('watch', function() {
 	gulp.watch('assets/sass/**', [ 'sass' ]);
 	gulp.watch('assets/js/dev/**', [ 'js' ]);
 	gulp.watch(html_input, [ 'html' ]);
-	gulp.watch('_site/**', [ 'reload' ]);
+	//gulp.watch('_site/**', [ 'reload' ]);
 });
 gulp.task('reload', function() {
 	browserSync.reload();
 });
 
 gulp.task('js', function() {
-	return gulp
-		.src(js_input)
-		.pipe(plumber())
-		// .pipe(sourcemaps.init())
-		.pipe(uglify())
-		// .pipe(sourcemaps.write())
-		.pipe(plumber.stop())
-		.pipe(size())
-		.pipe(gulp.dest(js_output))
-		.pipe(browserSync.stream());
+	return (gulp
+			.src(js_input)
+			.pipe(plumber())
+			// .pipe(sourcemaps.init())
+			.pipe(uglify())
+			// .pipe(sourcemaps.write())
+			.pipe(plumber.stop())
+			.pipe(size())
+			.pipe(gulp.dest(js_output))
+			.pipe(browserSync.stream()) );
 });
 
 gulp.task('sass', function() {

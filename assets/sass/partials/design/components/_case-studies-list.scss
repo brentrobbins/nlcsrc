@@ -28,6 +28,11 @@
                     background-color: $Affair;
                     transition: color .2s ease-in-out, background-color .2s ease-in-out;
                 }
+                .active {
+                    color: #fff;
+                    background-color: $Affair;
+                    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+                }
             }
         }
     }

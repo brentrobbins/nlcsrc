@@ -1,3 +1,11 @@
 body.subpage.recommendations {
-  background: url(/assets/images/wad-of-trash--placeholder.jpg) no-repeat 1260px bottom;
+    background: url(/assets/images/wad-of-trash--placeholder.jpg) no-repeat 1260px bottom;
+    .nlcstar--site-nav li a.navbar-item {
+        &:hover {
+            color: $PuertoRico;
+        }
+        &.active {
+            color: $PuertoRico;
+        }
+    }
 }
