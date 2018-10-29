@@ -1808,7 +1808,7 @@ var Chartist = {
   // work with relative positions yet. We need to check if we can do a viewBox hack to switch to percentage.
   // See http://mozilla.6506.n7.nabble.com/Specyfing-paths-with-percentages-unit-td247474.html
   // Update: can be done using the above method tested here: http://codepen.io/gionkunz/pen/KDvLj
-  // The problem is with the label offsets that can't be converted into percentage and affecting the chart container
+  // The Challenge is with the label offsets that can't be converted into percentage and affecting the chart container
   /**
    * Updates the chart which currently does a full reconstruction of the SVG DOM
    *

@@ -104,7 +104,7 @@ API Secret:
 - [] Desktop: front page 'facts'
 - [] Mobile/Responsive: front page 'facts'
 
-- [] THE PROBLEM:
+- [] The Challenge:
 - 
 
 - [] RECOMMENDATIONS:
@@ -211,25 +211,25 @@ Page Title (h1):
 - size: 72, lh: 80
 - Colors:
   - Case Studies: 'Affair'
-  - The Problem: 'Endeavour'
+  - The Challenge: 'Endeavour'
 
 Page Sub Title (h2):
 - Klinic Slab, Book
 - size: 36, lh: 44
   - Case Studies: 'Affair'
-  - The Problem: 'Endeavour'
+  - The Challenge: 'Endeavour'
 
 Page Heading Title (h3):
 - Gotham Black, Regular
 - size: 48, lh: 80
   - Case Studies: 'Affair'
-  - The Problem: 'Endeavour'
+  - The Challenge: 'Endeavour'
 
 Page Heading Title (h4):
 - Gotham Black, Regular
 - size: 30, lh: 66
   - Case Studies: 'Affair'
-  - The Problem: 'Endeavour'
+  - The Challenge: 'Endeavour'
 
 Page Paragraphs:
 - Gotham Book, Regular
@@ -241,7 +241,7 @@ Page Quote:
 - size: 36, lh: 44
 - Indented (approx: 97px)
   - Case Studies: 'Affair'
-  - The Problem: 'Endeavour'
+  - The Challenge: 'Endeavour'
 
 Small p (Small text for copyright and other places):
 - Gotham Book, Regular
