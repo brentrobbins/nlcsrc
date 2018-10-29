@@ -21,6 +21,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        margin-top: 100px;
     }
 }
 
@@ -217,6 +218,55 @@
     }
 }
 
+.ct-label.ct-horizontal.ct-end {
+    transform: rotate(60deg) translateY(10px);
+    margin: 10px 0 0 0;
+}
+
 .ct-label {
     font-family: 'Gotham-Black--Regular';
+}
+
+ul.ct-legend {
+    // padding: 0;
+    //position: absolute;
+    //bottom: 0;
+    z-index: 10;
+    display: flex;
+    //top: -110px;
+    flex-flow: row wrap;
+    li {
+        position: relative;
+        margin: 0px 30px 15px 0px;
+        font-size: 16px;
+        padding-left: 25px;
+        line-height: initial;
+        color: #6a6c6e;
+        font-family: 'Gotham-Book--Regular', sans-serif;
+        cursor: pointer;
+    }
+    li:before {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        content: '';
+        border: 3px solid transparent;
+        border-radius: 50%;
+    }
+    li.inactive:before {
+        background: transparent;
+    }
+    &.ct-legend-inside {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @for $i from 0 to length($ct-series-colors) {
+        .ct-series-#{$i}:before {
+            background-color: nth($ct-series-colors, $i + 1);
+            border-color: nth($ct-series-colors, $i + 1);
+        }
+    }
 }
