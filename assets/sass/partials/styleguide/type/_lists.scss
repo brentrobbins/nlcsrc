@@ -1,0 +1,14 @@
+ul {
+    padding: 20px 0 20px 40px;
+    li {
+        display: list-item;
+        color: $Nevada;
+        font-family: 'Gotham-Book--Regular', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0 0 15px 0;
+        a {
+            color: $Nevada;
+        }
+    }
+}

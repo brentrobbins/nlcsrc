@@ -176,9 +176,9 @@ function ready() {
 	*/
 
 	var inviewChart = new Waypoint({
-		element: document.querySelector('.nlcstar--front-facts.nlcstar--theme-nevada.chart'),
+		element: document.querySelector('#fact3'),
 		handler: function(direction) {
-			//console.log('Waypoint element chart');
+			console.log('Waypoint element chart');
 			loadChart();
 		},
 		offset: '40%'
@@ -200,13 +200,13 @@ function ready() {
 	var fifthNumberAnimate = new CountUp('fifthNumber', 0, 515, 0, 2.5, options);
 
 	var waypoint1 = new Waypoint({
-		element: document.getElementById('firstNumber'),
+		element: document.getElementById('fact1'),
 		handler: function(direction) {
 			console.log('Waypoint element id: ' + this.element.id);
 			document.querySelector('#fact1 figure').classList.add('animate');
 			firstNumberAnimate.start();
 		},
-		offset: '80%'
+		offset: '40%'
 	});
 	var waypoint2 = new Waypoint({
 		element: document.getElementById('secondNumber'),

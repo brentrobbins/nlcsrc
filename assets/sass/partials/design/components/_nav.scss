@@ -10,14 +10,17 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+    display: none;
     &.open {
         opacity: 1;
         background-color: rgba(0, 85, 184, .90);
         transition: .2s ease-in-out;
         z-index: 2;
+        display: block;
     }
     @media screen and (min-width: 980px) {
         position: relative;
+        display: block;
         opacity: 1;
         width: auto;
         margin-right: 25px;

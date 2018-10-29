@@ -1,14 +1,36 @@
 .nlcstar--front-facts {
     position: relative;
     width: 100%;
-    height: 1000px;
-    margin-top: 100px;
+    //height: 1000px;
+    //margin-top: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    a {
+        color: $Nevada;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    ul {
+        padding: 20px 0 20px 40px;
+        li {
+            display: list-item;
+            color: $Nevada;
+            font-family: 'Gotham-Book--Regular', sans-serif;
+            font-size: 20px;
+            line-height: 32px;
+            margin: 0 0 15px 0;
+            a {
+                color: $Nevada;
+            }
+        }
+    }
     header {
-        width: 50%;
-        position: absolute;
-        margin-top: 100px;
+        width: 100%;
         h3 {
-            margin: 0;
+            margin: 0 0 10px 0;
         }
         .cta {
             margin-bottom: 20px;
@@ -16,16 +38,16 @@
         }
     }
     figure {
-        margin-top: 240px;
-        position: absolute;
-        top: 0;
-        right: 0;
+        //margin-top: 240px;
+        //position: absolute;
+        // top: 0;
+        // right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        width: 572px;
-        height: 572px;
+        width: 50%;
+        //height: 572px;
         transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
         transform: translateY(-50px);
         &.animate {
@@ -52,13 +74,13 @@
         }
     }
     aside {
-        margin-top: 450px;
-        position: absolute;
-        top: 0;
-        left: 0;
+        //margin-top: 450px;
+        //position: absolute;
+        // top: 0;
+        // left: 0;
         color: #fff;
-        width: 572px;
-        height: 572px;
+        width: 50%;
+        //height: 572px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,15 +95,15 @@
         }
         .number {
             font-family: 'Gotham-Black--Regular';
-            font-size: 175px;
+            font-size: 87px;
         }
         .suffix-percent {
             font-family: 'Gotham-Black--Regular';
-            font-size: 72px;
+            font-size: 48px;
         }
         .suffix-text {
             font-family: 'Gotham-Black--Regular';
-            font-size: 36px;
+            font-size: 26px;
         }
         p {
             color: #fff;
@@ -104,10 +126,12 @@
         }
     }
     &.wad-of-trash {
-        background: url('/assets/images/wad-of-paper_large.jpg') no-repeat center bottom;
+        background: url('/assets/images/wad-of-paper_large.jpg') no-repeat center center;
+        //background-size: contain;
     }
     &.floating-can {
         background: url('/assets/images/floating-can--placeholder.jpg') no-repeat center bottom;
+        background-size: contain;
     }
     &.floating-water-bottle {
         background: url('/assets/images/water-bottle_bg.jpg') no-repeat center bottom;
@@ -116,7 +140,7 @@
 }
 
 #fact3 {
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 #fact6 {
@@ -128,6 +152,7 @@
 }
 
 #fact7 {
+    margin-top: 0;
     background: url('/assets/images/the-way-forward--placeholder.jpg') no-repeat right bottom;
     background-size: cover;
     height: 700px;
@@ -151,6 +176,11 @@
     }
     &.animate:before {
         opacity: 0;
+    }
+    .cta {
+        background: none;
+        padding-right: 5px;
+        margin-bottom: 0;
     }
 }
 
@@ -201,4 +231,158 @@
     }
 }
 
-//572px
+@media screen and (min-width: 1338px) {
+    .nlcstar--front-facts {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        margin-top: 200px;
+        header {
+            width: 50%;
+            position: absolute;
+            margin-top: 100px;
+            h3 {
+                margin: 0 0 10px 0;
+            }
+            .cta {
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+        }
+        figure {
+            margin-top: 240px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 572px;
+            height: 572px;
+            transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+            transform: translateY(-50px);
+            &.animate {
+                transform: translateY(0px);
+            }
+            img {
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            &.noBackgroundColor {
+                opacity: 0;
+                &.animate {
+                    opacity: 1;
+                }
+            }
+        }
+        aside {
+            margin-top: 450px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            width: 572px;
+            height: 572px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .aside-inner-wrap {
+                padding: 50px;
+                width: 100%;
+            }
+            .data-wrap {
+                border-bottom: 1px solid #fff;
+                width: 100%;
+            }
+            .number {
+                font-family: 'Gotham-Black--Regular';
+                font-size: 175px;
+            }
+            .suffix-percent {
+                font-family: 'Gotham-Black--Regular';
+                font-size: 72px;
+            }
+            .suffix-text {
+                font-family: 'Gotham-Black--Regular';
+                font-size: 36px;
+            }
+            p {
+                color: #fff;
+                font-family: 'Klinic-Slab--Book';
+                font-size: 30px;
+                line-height: 36px;
+                // margin: 30px 50px;
+                margin-top: 30px;
+                width: 100%;
+            }
+        }
+        &.chart {
+            header {
+                position: relative;
+                margin: 0 0 30px 0;
+            }
+            .nlcstar--front-chart {
+                border-top: solid 1px #c3c5c8;
+                padding: 30px 0 0 0;
+            }
+        }
+    }
+    &#fact1 {
+        height: 1400px;
+        //margin-top: 300px;
+        aside {
+            margin-top: 800px;
+        }
+    }
+    &#fact3 {
+        margin-top: 300px;
+    }
+    &#fact6 {
+        height: 800px;
+        margin-top: 200px;
+        figure {
+            margin-top: 0;
+        }
+    }
+    &#fact7 {
+        background: url('/assets/images/the-way-forward--placeholder.jpg') no-repeat right bottom;
+        background-size: cover;
+        height: 700px;
+        padding: 70px;
+        header {
+            width: 50%;
+            h3 {
+                margin: 0;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #faf8f9;
+            opacity: 1;
+            transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+        }
+        &.animate:before {
+            opacity: 0;
+        }
+    }
+    // theme adjustments
+    &:first-child {
+        margin-top: 0px;
+    }
+}
