@@ -20,6 +20,7 @@ body.front {
             height: auto;
             z-index: -1000;
             overflow: hidden;
+            object-fit: cover;
         }
         // &:after {
         //     transition: all 1s ease-in-out;
