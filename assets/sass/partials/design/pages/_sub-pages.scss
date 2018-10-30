@@ -1,9 +1,22 @@
 body.subpage {
+    position: relative;
     #content {
         opacity: 0;
         transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
         &.animate {
             opacity: 1;
+        }
+    }
+    @media screen and (min-width: 1338px) {
+        .wad {
+            position: absolute;
+            bottom: 0;
+            right: -350px;
+            width: 681px;
+            height: 592px;
+            background: url(/assets/images/wad-of-paper_subpage.jpg) no-repeat center center;
+            display: inline-block;
+            z-index: -1;
         }
     }
 }
