@@ -29,9 +29,9 @@ function ready() {
 	}
 	animateNLC(site, 0);
 	animateNLC(nav, 400);
-	animateNLC(hero, 2400);
-	animateNLC(heroh1, 2800);
-	animateNLC(heroh2, 3200);
+	animateNLC(hero, 1000);
+	animateNLC(heroh1, 1400);
+	animateNLC(heroh2, 1600);
 
 	/**
 	* Mobile Menu
