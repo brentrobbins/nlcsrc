@@ -7,6 +7,16 @@ body.subpage {
             opacity: 1;
         }
     }
+    header {
+        position: relative;
+        .cite {
+            position: absolute;
+            bottom: -10px;
+            color: #fff;
+            font-size: 12px;
+            left: 20px;
+        }
+    }
     @media screen and (min-width: 1338px) {
         .wad {
             position: absolute;
