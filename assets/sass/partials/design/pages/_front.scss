@@ -82,9 +82,7 @@ body.front {
         }
     }
     &.animate {
-        opacity: 1;
-        // max-width: 1240px;
-        //margin: 50px auto 70px auto;
+        opacity: .9;
     }
     h1 {
         font-size: 48px;
@@ -101,7 +99,7 @@ body.front {
         opacity: 0;
         padding: 0 190px;
         &.animate {
-            opacity: 1;
+            opacity: .9;
             max-width: 1240px;
             margin: 50px auto 70px auto;
         }
