@@ -1,8 +1,6 @@
 .nlcstar--front-facts {
     position: relative;
     width: 100%;
-    //height: 1000px;
-    //margin-top: 100px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -38,16 +36,11 @@
         }
     }
     figure {
-        //margin-top: 240px;
-        //position: absolute;
-        // top: 0;
-        // right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         width: 50%;
-        //height: 572px;
         transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
         transform: translateY(-50px);
         &.animate {
@@ -81,13 +74,8 @@
         }
     }
     aside {
-        //margin-top: 450px;
-        //position: absolute;
-        // top: 0;
-        // left: 0;
         color: #fff;
         width: 50%;
-        //height: 572px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -117,7 +105,6 @@
             font-family: 'Klinic-Slab--Book';
             font-size: 30px;
             line-height: 36px;
-            // margin: 30px 50px;
             margin-top: 30px;
             width: 100%;
         }
@@ -134,14 +121,13 @@
     }
     &.wad-of-trash {
         background: url('/assets/images/wad-of-paper_large.jpg') no-repeat center bottom;
-        //background-size: contain;
     }
     &.floating-can {
         background: url('/assets/images/can_bg.jpg') no-repeat center bottom;
         background-size: contain;
     }
     &.floating-water-bottle {
-        background: url('/assets/images/water-bottle_bg.jpg') no-repeat center bottom;
+        background: url('/assets/images/water-bottle-r2l_bg.jpg') no-repeat center bottom;
         background-size: contain;
     }
 }
@@ -192,10 +178,6 @@
     }
 }
 
-// theme adjustments
-// .nlcstar--front-facts:first-child {
-//     margin-top: 0px;
-// }
 .nlcstar--theme-puerto-rico {
     aside {
         @include background-opacity($FreeSpeechAquamarine);
@@ -245,10 +227,9 @@
         height: 1000px;
         margin-top: 200px;
         header {
-            //width: 50%;
             width: 572px;
             position: absolute;
-            margin-top: 100px;
+            // margin-top: 100px;
             h3 {
                 margin: 0 0 10px 0;
             }
@@ -257,11 +238,33 @@
                 display: inline-block;
             }
         }
+        &.left {
+            header {
+                left: 0;
+            }
+            figure {
+                right: 0;
+                margin-top: 150px;
+            }
+            aside {
+                left: 0;
+            }
+        }
+        &.right {
+            header {
+                right: 0;
+            }
+            figure {
+                left: 0;
+                margin-top: 150px;
+            }
+            aside {
+                right: 0;
+            }
+        }
         figure {
-            margin-top: 240px;
+            
             position: absolute;
-            top: 0;
-            right: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -294,10 +297,9 @@
             }
         }
         aside {
-            margin-top: 450px;
+            // margin-top: 450px;
             position: absolute;
             top: 0;
-            left: 0;
             color: #fff;
             width: 572px;
             height: 572px;
@@ -330,7 +332,6 @@
                 font-family: 'Klinic-Slab--Book';
                 font-size: 30px;
                 line-height: 36px;
-                // margin: 30px 50px;
                 margin-top: 30px;
                 width: 100%;
             }
@@ -348,13 +349,29 @@
     }
     &#fact1 {
         height: 1400px;
-        //margin-top: 300px;
         aside {
-            margin-top: 800px;
+            margin-top: 750px;
+        }
+    }
+    &#fact2 {
+        aside {
+            margin-top: 375px;
         }
     }
     &#fact3 {
+        margin-top: 500px;
+    }
+    &#fact4 {
         margin-top: 300px;
+        aside {
+            margin-top: 350px;
+        }
+    }
+    &#fact5 {
+        margin-top: 300px;
+        aside {
+            margin-top: 400px;
+        }
     }
     &#fact6 {
         height: 800px;
@@ -369,6 +386,7 @@
         height: 700px;
         padding: 70px;
         header {
+            margin: 0 0 0 70px;
             width: 50%;
             h3 {
                 margin: 0;
