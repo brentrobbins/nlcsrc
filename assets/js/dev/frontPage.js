@@ -408,7 +408,7 @@ function ready() {
 		separator: ',',
 		decimal: '.'
 	};
-	var firstNumberAnimate = new CountUp('firstNumber', 0, 95, 0, 1.5, options);
+	var firstNumberAnimate = new CountUp('firstNumber', 0, 94, 0, 1.5, options);
 	var secondNumberAnimate = new CountUp('secondNumber', 0, 2.2, 1, 2, options);
 	var fourthNumberAnimate = new CountUp('fourthNumber', 0, 15, 0, 2.5, options);
 	var fifthNumberAnimate = new CountUp('fifthNumber', 0, 515, 0, 2.5, options);
