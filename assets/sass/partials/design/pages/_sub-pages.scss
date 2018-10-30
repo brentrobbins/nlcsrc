@@ -1,5 +1,6 @@
 body.subpage {
     position: relative;
+    overflow-x: hidden;
     #content {
         opacity: 0;
         transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
