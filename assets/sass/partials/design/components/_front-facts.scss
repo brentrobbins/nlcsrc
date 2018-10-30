@@ -141,6 +141,12 @@
 
 #fact3 {
     margin-top: 100px;
+    p.cite {
+        display: block;
+        position: absolute;
+        bottom: -120px;
+        font-size: 14px;
+    }
 }
 
 #fact6 {
@@ -185,10 +191,9 @@
 }
 
 // theme adjustments
-.nlcstar--front-facts:first-child {
-    margin-top: 0px;
-}
-
+// .nlcstar--front-facts:first-child {
+//     margin-top: 0px;
+// }
 .nlcstar--theme-puerto-rico {
     aside {
         @include background-opacity($FreeSpeechAquamarine);
@@ -382,7 +387,7 @@
         }
     }
     // theme adjustments
-    &:first-child {
-        margin-top: 0px;
-    }
+    // &:first-child {
+    //     margin-top: 0px;
+    // }
 }

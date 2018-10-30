@@ -7,8 +7,12 @@ ul {
         font-size: 20px;
         line-height: 32px;
         margin: 0 0 15px 0;
+        list-style: circle;
         a {
             color: $Nevada;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }

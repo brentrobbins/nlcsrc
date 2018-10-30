@@ -7,9 +7,16 @@ p {
     &.small {
         font-size: 12px;
     }
+    a {
+        color: $Nevada;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
+
 blockquote {
-    
     font-family: 'Klinic-Slab--Book';
     font-size: 36px;
     line-height: 44px;
@@ -22,16 +29,19 @@ blockquote {
         color: $FreeSpeechAquamarine;
     }
 }
+
 .nlcstar--theme-affair {
     blockquote {
         color: $Affair;
     }
 }
+
 .nlcstar--theme-endeavour {
     blockquote {
         color: $Endeavour;
     }
 }
+
 .nlcstar--theme-nevada {
     blockquote {
         color: $Nevada;

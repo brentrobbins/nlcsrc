@@ -5,6 +5,15 @@ h4,
 h5,
 h6 {
     font-weight: normal;
+    small {
+        margin-left: 10px;
+        font-size: 16px;
+        top: -16px;
+        color: #888888;
+        position: relative;
+        font-family: 'Gotham-Book--Regular', sans-serif;
+        font-weight: normal;
+    }
 }
 
 h1 {

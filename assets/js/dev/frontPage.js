@@ -48,130 +48,122 @@ function ready() {
 	});
 
 	/**
-	* Chart data
-	*/
-	// var data = {
-	// 	labels: [ "Jan '17", "May '17", "Sep '17", "Jan '18", "Mar  '18", "May '18", "Jul '18" ],
-	// 	series: [
-	// 		[ 100, 140, 130, 160, 110, 90, 60 ],
-	// 		[ 100, 120, 90, 100, 80, 20, 15 ],
-	// 		[ 100, 115, 80, 95, 70, 50, 45 ]
-	// 	]
-	// };
-
-	var data = {};
-
-	/**
-	* Chart Options
-	*/
-	var options = {
-		lineSmooth: false,
-		axisX: {
-			// showGrid: false,
-		},
-		axisY: {
-			// showGrid: false,
-			onlyInteger: true
-		},
-		fullWidth: true,
-		chartPadding: {
-			right: 40,
-			bottom: 50
-		},
-		plugins: [
-			Chartist.plugins.legend({
-				legendNames: [
-					'Mixed Plastic',
-					'Natural HDPE',
-					'PET Plastic',
-					'Alum Cans Sorted & Baled by ton',
-					'Corrugated Containers',
-					'Mixed Paper',
-					'Sorted Res Paper',
-					'Steel Cans - Sorted & Baled'
-				]
-			})
-		]
-	};
-	var responsiveOptions = [
-		[
-			'screen and (min-width: 641px) and (max-width: 1024px)',
-			{
-				seriesBarDistance: 7,
-				axisX: {
-					labelInterpolationFnc: function(value) {
-						return value;
-					}
-				}
-			}
-		],
-		[
-			'screen and (max-width: 640px)',
-			{
-				seriesBarDistance: 5,
-				axisX: {
-					labelInterpolationFnc: function(value) {
-						return value[0];
-					}
-				}
-			}
-		]
-	];
-
-	/**
-	* Chart object
-	*/
-	var chart = Chartist.Line('.ct-chart', data, options, responsiveOptions, {});
-
-	/**
-	* Chart Animation
-	*/
-	var seq = 0,
-		delays = 80,
-		durations = 500;
-	chart.on('draw', function(data) {
-		seq++;
-		if (data.type === 'line' || data.type === 'area') {
-			data.element.animate({
-				d: {
-					begin: 800 * data.index,
-					dur: 1000,
-					from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-					to: data.path.clone().stringify(),
-					easing: Chartist.Svg.Easing.easeOutQuint
-				}
-			});
-		} else if (data.type === 'point') {
-			data.element.animate({
-				x1: {
-					begin: seq * delays,
-					dur: durations,
-					from: data.x - 10,
-					to: data.x,
-					easing: 'easeOutQuart'
-				},
-				x2: {
-					begin: seq * delays,
-					dur: durations,
-					from: data.x - 10,
-					to: data.x,
-					easing: 'easeOutQuart'
-				},
-				opacity: {
-					begin: seq * delays,
-					dur: durations,
-					from: 0,
-					to: 1,
-					easing: 'easeOutQuart'
-				}
-			});
-		}
-	});
-
-	/**
 	* Chart Load funcationality triggered when scrolled into view
 	*/
 	function loadChart() {
+		/**
+	* Chart data
+	*/
+		var data = {};
+
+		/**
+	* Chart Options
+	*/
+		var options = {
+			lineSmooth: false,
+			axisX: {
+				// showGrid: false,
+			},
+			axisY: {
+				// showGrid: false,
+				onlyInteger: true
+			},
+			fullWidth: true,
+			chartPadding: {
+				right: 40,
+				bottom: 50
+			},
+			plugins: [
+				Chartist.plugins.legend({
+					clickable: false,
+					legendNames: [
+						'Mixed Plastic',
+						'Natural HDPE',
+						'PET Plastic',
+						'Alum Cans Sorted & Baled by ton',
+						'Corrugated Containers',
+						'Mixed Paper',
+						'Sorted Res Paper',
+						'Steel Cans - Sorted & Baled'
+					]
+				})
+			]
+		};
+		var responsiveOptions = [
+			[
+				'screen and (min-width: 641px) and (max-width: 1024px)',
+				{
+					seriesBarDistance: 7,
+					axisX: {
+						labelInterpolationFnc: function(value) {
+							return value;
+						}
+					}
+				}
+			],
+			[
+				'screen and (max-width: 640px)',
+				{
+					seriesBarDistance: 5,
+					axisX: {
+						labelInterpolationFnc: function(value) {
+							return value[0];
+						}
+					}
+				}
+			]
+		];
+
+		/**
+	* Chart object
+	*/
+		var chart = Chartist.Line('.ct-chart', data, options, responsiveOptions);
+
+		/**
+	* Chart Animation
+	*/
+		var seq = 0,
+			delays = 50,
+			durations = 50;
+		chart.on('draw', function(data) {
+			seq++;
+			if (data.type === 'line' || data.type === 'area') {
+				data.element.animate({
+					d: {
+						begin: 200 * data.index,
+						dur: 1000,
+						from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+						to: data.path.clone().stringify(),
+						easing: Chartist.Svg.Easing.easeOutQuint
+					}
+				});
+			} else if (data.type === 'point') {
+				data.element.animate({
+					x1: {
+						begin: seq * delays,
+						dur: durations,
+						from: data.x - 10,
+						to: data.x,
+						easing: 'easeOutQuart'
+					},
+					x2: {
+						begin: seq * delays,
+						dur: durations,
+						from: data.x - 10,
+						to: data.x,
+						easing: 'easeOutQuart'
+					},
+					opacity: {
+						begin: seq * delays,
+						dur: durations,
+						from: 0,
+						to: 1,
+						easing: 'easeOutQuart'
+					}
+				});
+			}
+		});
+
 		var data = {
 			labels: [
 				'1/3/2017',
@@ -386,10 +378,11 @@ function ready() {
 		chart.update((data = data));
 		inviewChart.destroy();
 	}
+	//loadChart();
 	/**
 	* Kill Chart Data
 	*/
-	chart.update((data = {}));
+	//chart.update((data = {}));
 
 	/**
 	* In View Animation Triggers for the chart
@@ -399,9 +392,10 @@ function ready() {
 		element: document.querySelector('#fact3'),
 		handler: function(direction) {
 			console.log('Waypoint element chart');
+
 			loadChart();
 		},
-		offset: '40%'
+		offset: '80%'
 	});
 
 	/**
@@ -426,7 +420,7 @@ function ready() {
 			document.querySelector('#fact1 figure').classList.add('animate');
 			firstNumberAnimate.start();
 		},
-		offset: '40%'
+		offset: '80%'
 	});
 	var waypoint2 = new Waypoint({
 		element: document.getElementById('secondNumber'),
