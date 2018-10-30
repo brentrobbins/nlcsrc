@@ -133,6 +133,9 @@
 }
 
 #fact3 {
+    header {
+        width: 100%;
+    }
     margin-top: 100px;
     p.cite {
         display: block;
@@ -359,7 +362,7 @@
         }
     }
     &#fact3 {
-        margin-top: 500px;
+        margin-top: 200px;
     }
     &#fact4 {
         margin-top: 300px;
