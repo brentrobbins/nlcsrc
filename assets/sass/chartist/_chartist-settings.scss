@@ -58,4 +58,35 @@ $ct-include-colored-series: $ct-include-classes !default;
 $ct-include-alternative-responsive-containers: $ct-include-classes !default;
 // Series names and colors. This can be extended or customized as desired. Just add more series and colors.
 $ct-series-names: (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o) !default;
-$ct-series-colors: ( #d70206, #f05b4f, #f4c63d, #d17905, #453d3f, #59922b, #0544d3, #6b0392, #f05b4f, #dda458, #eacf7d, #86797d, #b2c326, #6188e2, #a748ca) !default;
+$ct-series-colors: ( #4abfa9, #0055bc, #91469c, #343434, #453d3f, #59922b, #0544d3, #6b0392, #f05b4f, #dda458, #eacf7d, #86797d, #b2c326, #6188e2, #a748ca) !default;
+.ct-series-a .ct-line {
+    stroke: #4abfa9;
+}
+
+.ct-series-a .ct-point {
+    stroke: #4abfa9;
+}
+
+.ct-series-b .ct-line {
+    stroke: #0055bc;
+}
+
+.ct-series-b .ct-point {
+    stroke: #0055bc;
+}
+
+.ct-series-c .ct-line {
+    stroke: #91469c;
+}
+
+.ct-series-c .ct-point {
+    stroke: #91469c;
+}
+
+.ct-series-d .ct-line {
+    stroke: #f3e2e2;
+}
+
+.ct-series-d .ct-point {
+    stroke: #343434;
+}
