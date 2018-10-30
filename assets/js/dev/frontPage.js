@@ -70,7 +70,7 @@ function ready() {
 			},
 			fullWidth: true,
 			chartPadding: {
-				right: 20,
+				right: 40,
 				bottom: 50
 			},
 			plugins: [
