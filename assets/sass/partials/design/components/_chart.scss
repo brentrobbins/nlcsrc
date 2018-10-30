@@ -21,6 +21,12 @@
     .ct-series-c .ct-point {
         stroke: #91469c;
     }
+    .ct-series-e .ct-line {
+        stroke: #343434;
+    }
+    .ct-series-e .ct-point {
+        stroke: #343434;
+    }
     .ct-vertical {
         stroke: #000;
         display: block;
@@ -32,12 +38,12 @@
         stroke-width: 1px;
         stroke-dasharray: 0px;
     }
-    .ct-grids .ct-horizontal:not(:first-of-type) {
-        opacity: 0;
-    }
-    .ct-grids .ct-vericle:not(:first-of-type) {
-        opacity: 0;
-    }
+    // .ct-grids .ct-horizontal:not(:first-of-type) {
+    //     opacity: 0;
+    // }
+    // .ct-grids .ct-vericle:not(:first-of-type) {
+    //     opacity: 0;
+    // }
     // * {
     //     transform-origin: 0px 0px 0px;
     // }

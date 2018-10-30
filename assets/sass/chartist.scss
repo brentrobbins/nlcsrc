@@ -218,11 +218,10 @@
     }
 }
 
-.ct-label.ct-horizontal.ct-end {
-    transform: rotate(60deg) translateY(10px);
-    margin: 10px 0 0 0;
-}
-
+// .ct-label.ct-horizontal.ct-end {
+//     transform: rotate(60deg) translateY(10px);
+//     margin: 10px 0 0 0;
+// }
 .ct-label {
     font-family: 'Gotham-Black--Regular';
 }
@@ -271,4 +270,8 @@ ul.ct-legend {
             border-color: nth($ct-series-colors, $i + 1);
         }
     }
+}
+
+.ct-octave>svg {
+    margin-top: 80px;
 }
