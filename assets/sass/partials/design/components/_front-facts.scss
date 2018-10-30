@@ -72,6 +72,13 @@
                 opacity: 1;
             }
         }
+        .cite {
+            position: absolute;
+            bottom: -10px;
+            color: #fff;
+            font-size: 12px;
+            left: 20px;
+        }
     }
     aside {
         //margin-top: 450px;
@@ -126,11 +133,11 @@
         }
     }
     &.wad-of-trash {
-        background: url('/assets/images/wad-of-paper_large.jpg') no-repeat center center;
+        background: url('/assets/images/wad-of-paper_large.jpg') no-repeat center bottom;
         //background-size: contain;
     }
     &.floating-can {
-        background: url('/assets/images/floating-can--placeholder.jpg') no-repeat center bottom;
+        background: url('/assets/images/can_bg.jpg') no-repeat center bottom;
         background-size: contain;
     }
     &.floating-water-bottle {
@@ -182,11 +189,6 @@
     }
     &.animate:before {
         opacity: 0;
-    }
-    .cta {
-        background: none;
-        padding-right: 5px;
-        margin-bottom: 0;
     }
 }
 
@@ -243,7 +245,8 @@
         height: 1000px;
         margin-top: 200px;
         header {
-            width: 50%;
+            //width: 50%;
+            width: 572px;
             position: absolute;
             margin-top: 100px;
             h3 {
