@@ -14,8 +14,8 @@
             display: list-item;
             color: $Nevada;
             font-family: 'Gotham-Book--Regular', sans-serif;
-            font-size: 20px;
-            line-height: 32px;
+            font-size: 16px;
+            line-height: inherit;
             margin: 0 0 15px 0;
             a {
                 color: $Nevada;
@@ -173,16 +173,15 @@
 
 #fact6 {
     //height: 800px;
+    // margin-top: 200px;
     margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     header {
-        flex: 1;
+        width: 100%;
     }
     figure {
-        flex: 1;
-        height: 100%;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
         img {
             object-fit: contain;
         }
@@ -259,7 +258,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 979px) {
+@media screen and (min-width: 600px) and (max-width: 969px) {
     .nlcstar--front-facts {
         header {
             h3 {
@@ -267,12 +266,231 @@
                 line-height: 64px;
             }
         }
+        ul {
+            li {
+                font-size: 18px;
+            }
+        }
+        #fact6 {
+            //height: 800px;
+            margin-top: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            header {
+                flex: 1;
+            }
+            figure {
+                flex: 1;
+                height: 100%;
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width: 980px) and (max-width: 1337px) {
+// @media screen and (min-width: 980px) and (max-width: 1337px) {
+//     .nlcstar--front-facts {
+//         header {}
+//     }
+// }
+@media screen and (min-width: 970px) {
     .nlcstar--front-facts {
-        header {}
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        margin-top: 200px;
+        ul {
+            li {
+                font-size: 20px;
+            }
+        }
+        header {
+            width: 45%;
+            position: absolute;
+            // margin-top: 100px;
+            h3 {
+                margin: 0 0 10px 0;
+            }
+            .cta {
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+        }
+        &.left {
+            header {
+                left: 0;
+            }
+            figure {
+                right: 0;
+                margin-top: 150px;
+            }
+            aside {
+                left: 0;
+            }
+        }
+        &.right {
+            header {
+                right: 0;
+            }
+            figure {
+                left: 0;
+                margin-top: 150px;
+            }
+            aside {
+                right: 0;
+            }
+        }
+        figure {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 45%;
+            height: 472px;
+            transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+            transform: translateY(-50px);
+            margin: 0;
+            &.animate {
+                transform: translateY(0px);
+            }
+            img {
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            &.noBackgroundColor {
+                opacity: 0;
+                &.animate {
+                    opacity: 1;
+                }
+            }
+        }
+        aside {
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            color: #fff;
+            width: 45%;
+            height: 472px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            .aside-inner-wrap {
+                padding: 50px;
+                width: 100%;
+            }
+            .data-wrap {
+                border-bottom: 1px solid #fff;
+                width: 100%;
+            }
+            .number {
+                font-family: 'Gotham-Black--Regular';
+                font-size: 175px;
+            }
+            .suffix-percent {
+                font-family: 'Gotham-Black--Regular';
+                font-size: 72px;
+            }
+            .suffix-text {
+                font-family: 'Gotham-Black--Regular';
+                font-size: 36px;
+            }
+            p {
+                color: #fff;
+                font-family: 'Klinic-Slab--Book';
+                font-size: 30px;
+                line-height: 36px;
+                margin-top: 30px;
+                width: 100%;
+            }
+        }
+        &.chart {
+            header {
+                position: relative;
+                margin: 0 0 30px 0;
+            }
+            .nlcstar--front-chart {
+                border-top: solid 1px #c3c5c8;
+                padding: 30px 0 0 0;
+            }
+        }
+    }
+    &#fact1 {
+        background-position: center bottom;
+        height: 1400px;
+        aside {
+            margin-top: 825px;
+        }
+    }
+    &#fact2 {
+        aside {
+            margin-top: 410px;
+        }
+    }
+    &#fact3 {
+        margin-top: 200px;
+    }
+    &#fact4 {
+        margin-top: 300px;
+        aside {
+            margin: 420px 0 0 0;
+        }
+    }
+    &#fact5 {
+        background-position: center center;
+        margin-top: 300px;
+        aside {
+            margin-top: 500px;
+        }
+    }
+    &#fact6 {
+        height: 800px;
+        margin-top: 200px;
+        figure {
+            margin-top: 0;
+        }
+    }
+    #fact7 {
+        height: 600px;
+        padding: 70px;
+        header {
+            margin: 0 0 0 70px;
+            width: 50%;
+            h3 {
+                margin: 0;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #faf8f9;
+            opacity: 1;
+            transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+        }
+        &.animate:before {
+            opacity: 0;
+        }
     }
 }
 

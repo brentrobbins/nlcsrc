@@ -7,8 +7,20 @@
 
 body.front {
     .wrapper {
-        margin: 0 25px;
+        margin: 0 15px;
     }
+}
+
+@media screen and (min-width: 600px) {
+    body.front {
+        .wrapper {
+            margin: 0 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 970px) {
+    //
 }
 
 @media screen and (min-width: 1338px) {
