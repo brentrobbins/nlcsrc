@@ -1,15 +1,24 @@
 body.subpage {
     header.main-header {
         h1 {
-            margin: 185px 0 25px 0;
+            margin: 65px 0 20px 0;
         }
         h2 {
-            margin-top: 0;
+            margin: 0 0 40px 0;
+            line-height: inherit;
         }
         figure {
             margin: 0;
             img {
                 max-width: 100%;
+            }
+        }
+        @media screen and (min-width: 760px) {
+            //
+        }
+        @media screen and (min-width: 979px) {
+            h1 {
+                margin: 185px 0 25px 0;
             }
         }
     }

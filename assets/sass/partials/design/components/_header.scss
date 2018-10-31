@@ -1,11 +1,7 @@
 // header
 #nlcstar--nav-wrapper {
     z-index: 2;
-    //display: flex;
-    //max-width: 1240px;
     text-align: center;
-    // margin: 0 auto;
-    //width: auto;
     display: flex;
     width: 100%;
     opacity: 0;
@@ -39,10 +35,21 @@
 body.subpage {
     #nlcstar--nav-wrapper {
         border-bottom: solid 1px #c3c5c8;
-        padding-bottom: 35px;
-        margin: 0;
+        // padding-bottom: 35px;
+        // margin: 0;
+        // position: relative;
+        // opacity: 0;
+        // display: flex;
+        // width: 100%;
         position: relative;
+        z-index: 2;
+        text-align: center;
+        display: flex;
+        width: 100%;
         opacity: 0;
+        transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
+        margin: 0 10px 35px 10px;
+        padding: 25px 35px 35px 25px;
         transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
         &.animate {
             margin: 0 auto 0 auto;

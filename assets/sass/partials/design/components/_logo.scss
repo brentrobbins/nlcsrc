@@ -2,7 +2,7 @@
 .nlcstar--site-logo {
     //width: auto;
     //margin-right: auto;
-    //transform: translateY(4px) scale(.5);
+    transform: translateY(4px) scale(.8);
     //margin: 0 auto 0 25px;
     margin-right: auto;
     @media screen and (min-width: 760px) and (max-width: 1223px) {}
@@ -14,5 +14,8 @@
         svg path {
             fill: #0f58ac;
         }
+    }
+    @media screen and (min-width: 760px) {
+        transform: translateY(4px) scale(1);
     }
 }

@@ -5,6 +5,8 @@ h4,
 h5,
 h6 {
     font-weight: normal;
+    margin: 0;
+    padding: 0;
     small {
         margin-left: 10px;
         font-size: 16px;
@@ -17,38 +19,96 @@ h6 {
 
 h1 {
     font-family: 'Gotham-Black--Regular';
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 36px;
+    //line-height: 80px;
 }
 
 h2 {
     font-family: 'Klinic-Slab--Book';
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 28px;
+    //line-height: 44px;
 }
 
 h3 {
     font-family: 'Gotham-Black--Regular';
-    font-size: 60px;
-    line-height: 66px;
+    font-size: 28px;
+    line-height: inherit;
+    margin: 40px 0 0 0;
 }
 
 h4 {
     font-family: 'Gotham-Black--Regular';
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 22px;
+    line-height: inherit;
+    margin: 40px 0 0 0;
 }
 
 h5 {
     font-family: 'Gotham-Black--Regular';
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 18px;
+    line-height: inherit;
+    margin: 40px 0 0 0;
 }
 
 h6 {
     font-family: 'Gotham-Black--Regular';
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 40px 0 0 0;
+}
+
+@media screen and (min-width: 760px) {
+    h1 {
+        font-family: 'Gotham-Black--Regular';
+        font-size: 72px;
+        line-height: 80px;
+    }
+    h2 {
+        font-family: 'Klinic-Slab--Book';
+        font-size: 48px;
+        line-height: 44px;
+    }
+    h3 {
+        font-family: 'Gotham-Black--Regular';
+        font-size: 48px;
+        line-height: inherit;
+        margin: 60px 0 0 0;
+    }
+    h4 {
+        font-family: 'Gotham-Black--Regular';
+        font-size: 32px;
+        line-height: inherit;
+        margin: 40px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    h1 {
+        font-family: 'Gotham-Black--Regular';
+        font-size: 72px;
+        line-height: 80px;
+    }
+    h2 {
+        font-family: 'Klinic-Slab--Book';
+        font-size: 48px;
+        line-height: 44px;
+    }
+    h3 {
+        font-family: 'Gotham-Black--Regular';
+        font-size: 48px;
+        line-height: inherit;
+        margin: 60px 0 0 0;
+    }
+    h4 {
+        font-family: 'Gotham-Black--Regular';
+        font-size: 36px;
+        line-height: inherit;
+        margin: 60px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1290px) {
+    //
 }
 
 // theme adjustments
@@ -112,30 +172,3 @@ h6 {
         }
     }
 }
-
-
-/*
-
-Graph Section h3:
-- Gotham Black, Regular
-- size: 60, lh: 66
-- Color: Nevada theme
-
-Page Sub Title (h2):
-- Klinic Slab, Book
-- size: 36, lh: 44
-  - Case Studies: 'Affair'
-  - The Challenge: 'Endeavour'
-
-Page Heading Title (h3):
-- Gotham Black, Regular
-- size: 48, lh: 80
-  - Case Studies: 'Affair'
-  - The Challenge: 'Endeavour'
-
-Page Heading Title (h4):
-- Gotham Black, Regular
-- size: 30, lh: 66
-  - Case Studies: 'Affair'
-  - The Challenge: 'Endeavour'
-*/

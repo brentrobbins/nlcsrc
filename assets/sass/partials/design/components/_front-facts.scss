@@ -146,7 +146,7 @@
 
 #fact2 {
     background-position: center 200px;
-    padding-bottom: 100px;
+    padding-bottom: 210px;
 }
 
 #fact3 {
@@ -156,8 +156,7 @@
     margin-top: 100px;
     p.cite {
         display: block;
-        position: absolute;
-        bottom: -20px;
+        transform: translateY(40px);
         font-size: 14px;
     }
 }
@@ -195,9 +194,9 @@
     background: url('/assets/images/the-way-forward.jpg') no-repeat right bottom;
     background-size: cover;
     height: 700px;
-    padding: 70px;
+    padding: 30px 40px 0 40px;
     header {
-        width: 50%;
+        width: 100%;
         h3 {
             margin: 0;
         }
@@ -409,12 +408,12 @@
         background-position: center bottom;
         height: 1400px;
         aside {
-            margin-top: 750px;
+            margin-top: 825px;
         }
     }
     &#fact2 {
         aside {
-            margin-top: 375px;
+            margin-top: 410px;
         }
     }
     &#fact3 {
@@ -423,14 +422,14 @@
     &#fact4 {
         margin-top: 300px;
         aside {
-            margin-top: 350px;
+            margin: 420px 0 0 0;
         }
     }
     &#fact5 {
         background-position: center center;
         margin-top: 300px;
         aside {
-            margin-top: 400px;
+            margin-top: 500px;
         }
     }
     &#fact6 {
@@ -440,8 +439,8 @@
             margin-top: 0;
         }
     }
-    &#fact7 {
-        height: 700px;
+    #fact7 {
+        height: 600px;
         padding: 70px;
         header {
             margin: 0 0 0 70px;
@@ -465,8 +464,4 @@
             opacity: 0;
         }
     }
-    // theme adjustments
-    // &:first-child {
-    //     margin-top: 0px;
-    // }
 }
