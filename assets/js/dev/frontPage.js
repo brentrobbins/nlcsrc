@@ -39,6 +39,7 @@ function ready() {
 	document.querySelector('#nav-icon').addEventListener('click', function(e) {
 		document.querySelector('#nav-icon').classList.toggle('open');
 		document.querySelector('.navbar-menu').classList.toggle('open');
+		document.querySelector('body').classList.toggle('mobilenav');
 		//document.querySelector('.navbar-burger').classList.toggle('open');
 
 		window.setTimeout(showLinks, 100);

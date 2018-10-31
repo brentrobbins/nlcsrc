@@ -2,9 +2,6 @@
     position: relative;
     width: 100%;
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     a {
         color: $Nevada;
         &:hover {
@@ -36,20 +33,27 @@
         }
     }
     figure {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         width: 50%;
+        height: 350px;
         transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-        transform: translateY(-50px);
+        transform: translateY(0px);
+        //transform: translateY(-50px);
+        margin-left: auto;
+        margin-right: -25px;
+        z-index: 0;
         &.animate {
-            transform: translateY(0px);
+            //transform: translateY(100px);
         }
         img {
             flex-shrink: 0;
             min-width: 100%;
             min-height: 100%;
+            object-fit: cover;
         }
         &:before {
             content: '';
@@ -75,14 +79,18 @@
     }
     aside {
         color: #fff;
-        width: 50%;
+        width: auto;
+        margin: 0 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        z-index: 1;
+        transform: translateY(-100px);
         .aside-inner-wrap {
             padding: 50px;
-            width: 100%;
+            width: auto;
         }
         .data-wrap {
             border-bottom: 1px solid #fff;
@@ -90,15 +98,15 @@
         }
         .number {
             font-family: 'Gotham-Black--Regular';
-            font-size: 87px;
+            font-size: 175px;
         }
         .suffix-percent {
             font-family: 'Gotham-Black--Regular';
-            font-size: 48px;
+            font-size: 72px;
         }
         .suffix-text {
             font-family: 'Gotham-Black--Regular';
-            font-size: 26px;
+            font-size: 36px;
         }
         p {
             color: #fff;
@@ -120,7 +128,7 @@
         }
     }
     &.wad-of-trash {
-        background: url('/assets/images/wad-of-paper_large.jpg') no-repeat center bottom;
+        background: url('/assets/images/wad-of-paper_large.jpg') no-repeat;
     }
     &.floating-can {
         background: url('/assets/images/can_bg.jpg') no-repeat center bottom;
@@ -130,6 +138,15 @@
         background: url('/assets/images/water-bottle-r2l_bg.jpg') no-repeat center bottom;
         background-size: contain;
     }
+}
+
+#fact1 {
+    background-position: center center;
+}
+
+#fact2 {
+    background-position: center 200px;
+    padding-bottom: 100px;
 }
 
 #fact3 {
@@ -145,16 +162,36 @@
     }
 }
 
-#fact6 {
-    height: 800px;
+#fact4 {
     margin-top: 200px;
+    background-size: auto;
+}
+
+#fact5 {
+    margin-top: 200px;
+    background-position: center 300px;
+}
+
+#fact6 {
+    //height: 800px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    header {
+        flex: 1;
+    }
     figure {
-        margin-top: 0;
+        flex: 1;
+        height: 100%;
+        img {
+            object-fit: contain;
+        }
     }
 }
 
 #fact7 {
-    margin-top: 0;
+    margin-top: 200px;
     background: url('/assets/images/the-way-forward.jpg') no-repeat right bottom;
     background-size: cover;
     height: 700px;
@@ -223,8 +260,28 @@
     }
 }
 
+@media screen and (min-width: 600px) and (max-width: 979px) {
+    .nlcstar--front-facts {
+        header {
+            h3 {
+                font-size: 58px;
+                line-height: 64px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1337px) {
+    .nlcstar--front-facts {
+        header {}
+    }
+}
+
 @media screen and (min-width: 1338px) {
     .nlcstar--front-facts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         position: relative;
         width: 100%;
         height: 1000px;
@@ -266,7 +323,6 @@
             }
         }
         figure {
-            
             position: absolute;
             display: flex;
             justify-content: center;
@@ -300,7 +356,6 @@
             }
         }
         aside {
-            // margin-top: 450px;
             position: absolute;
             top: 0;
             color: #fff;
@@ -351,6 +406,7 @@
         }
     }
     &#fact1 {
+        background-position: center bottom;
         height: 1400px;
         aside {
             margin-top: 750px;
@@ -371,6 +427,7 @@
         }
     }
     &#fact5 {
+        background-position: center center;
         margin-top: 300px;
         aside {
             margin-top: 400px;

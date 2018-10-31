@@ -1,13 +1,13 @@
 // site logo
 .nlcstar--site-logo {
-    width: auto;
-    margin-right: auto;
+    //width: auto;
+    //margin-right: auto;
+    //transform: translateY(4px) scale(.5);
     //margin: 0 auto 0 25px;
+    margin-right: auto;
     @media screen and (min-width: 760px) and (max-width: 1223px) {}
     @media screen and (min-width: 1224px) {
         width: auto;
-        margin-right: auto;
-        margin-left: 0;
     }
     &.open {
         z-index: 3;
