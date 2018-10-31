@@ -14,6 +14,8 @@ h6 {
         position: relative;
         font-family: 'Gotham-Book--Regular', sans-serif;
         font-weight: normal;
+        display: block;
+        margin: 10px 0 0 0;
     }
 }
 
@@ -62,6 +64,10 @@ h6 {
         font-family: 'Gotham-Black--Regular';
         font-size: 72px;
         line-height: 80px;
+        small {
+            display: inline;
+            margin: 0;
+        }
     }
     h2 {
         font-family: 'Klinic-Slab--Book';

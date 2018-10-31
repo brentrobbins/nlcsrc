@@ -39,7 +39,7 @@ body.front {
 
 #nlcstar--front-hero-wrapper {
     background-color: #0055b8;
-    height: 100vh;
+    height: initial;
     // width: 100%;
     //margin: 50px 25px 50px 25px;
     transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -113,6 +113,7 @@ body.front {
         }
     }
     @media screen and (min-width: 980px) {
+        height: 100vh;
         padding: 0 90px;
         max-width: 1240px;
         h1 {
