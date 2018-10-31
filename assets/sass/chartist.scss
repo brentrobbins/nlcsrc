@@ -227,7 +227,7 @@
 }
 
 ul.ct-legend {
-    // padding: 0;
+    padding: 0;
     //position: absolute;
     //bottom: 0;
     z-index: 10;
@@ -237,14 +237,15 @@ ul.ct-legend {
     max-width: 1238px;
     li {
         position: relative;
-        margin: 0px 30px 20px 0px;
-        font-size: 16px;
-        padding: 0 0 0 25px;
+        margin: 0 10px 0 0;
+        font-size: 14px;
+        padding: 0 0 0 18px;
         line-height: initial;
         color: #6a6c6e;
         font-family: 'Gotham-Book--Regular', sans-serif;
         //cursor: pointer;
         list-style: none;
+        display: inline-block;
     }
     li:before {
         width: 12px;
@@ -268,6 +269,13 @@ ul.ct-legend {
         .ct-series-#{$i}:before {
             background-color: nth($ct-series-colors, $i + 1);
             border-color: nth($ct-series-colors, $i + 1);
+        }
+    }
+    @media screen and (min-width: 600px) {
+        li {
+            margin: 0px 30px 20px 0px;
+            font-size: 14px;
+            padding: 0 0 0 25px;
         }
     }
 }

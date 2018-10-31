@@ -3,11 +3,10 @@
     width: auto;
     margin: 100px auto 20px auto;
     //padding: 0 30px;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
     .footer-text {
         width: 100%;
+        display: block;
     }
     p {
         margin: 0;
@@ -15,8 +14,11 @@
     }
     .logo {
         margin: 0 auto 20px auto;
+        display: block;
     }
     @media screen and (min-width: 920px) {
+        display: flex;
+        flex-wrap: wrap;
         text-align: left;
         max-width: 1238px;
         margin: 200px 25px 25px 25px;
