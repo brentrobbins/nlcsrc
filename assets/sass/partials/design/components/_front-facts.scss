@@ -98,7 +98,7 @@
         }
         .number {
             font-family: 'Gotham-Black--Regular';
-            font-size: 118px;
+            font-size: 100px;
         }
         .suffix-percent {
             font-family: 'Gotham-Black--Regular';
@@ -106,12 +106,12 @@
         }
         .suffix-text {
             font-family: 'Gotham-Black--Regular';
-            font-size: 34px;
+            font-size: 24px;
         }
         p {
             color: #fff;
             font-family: 'Klinic-Slab--Book';
-            font-size: 24px;
+            font-size: 22px;
             line-height: inherit;
             margin-top: 30px;
             width: 100%;
@@ -162,19 +162,19 @@
 }
 
 #fact4 {
-    margin-top: 200px;
+    margin-top: 100px;
     background-size: auto;
 }
 
 #fact5 {
-    margin-top: 200px;
+    margin-top: 100px;
     background-position: center 300px;
 }
 
 #fact6 {
     //height: 800px;
     // margin-top: 200px;
-    margin-top: 200px;
+    margin-top: 100px;
     header {
         width: 100%;
         position: relative;
@@ -190,13 +190,16 @@
 }
 
 #fact7 {
-    margin-top: 200px;
+    margin-top: 100px;
     background: url('/assets/images/the-way-forward.jpg') no-repeat right bottom;
     background-size: cover;
-    height: 700px;
-    padding: 30px 40px 0 40px;
+    // height: 700px;
+    //padding: 10px;
     header {
-        width: 100%;
+        //width: 100%;
+        background: rgba(217, 214, 209, .8);
+        padding: 20px 20px 0 20px;
+        margin: 10px auto;
         h3 {
             margin: 0;
         }
@@ -272,6 +275,12 @@
                 font-size: 18px;
             }
         }
+        #fact4 {
+            margin-top: 200px;
+        }
+        #fact5 {
+            margin-top: 200px;
+        }
         #fact6 {
             //height: 800px;
             margin-top: 200px;
@@ -286,6 +295,14 @@
                 height: 100%;
                 img {
                     object-fit: contain;
+                }
+            }
+            #fact7 {
+                height: 700px;
+                margin-top: 200px;
+                padding: 30px 40px 0 40px;
+                header {
+                    background: none;
                 }
             }
         }
@@ -469,6 +486,7 @@
         }
     }
     #fact7 {
+        //padding: 30px 40px 0 40px;
         height: 600px;
         padding: 70px;
         header {
