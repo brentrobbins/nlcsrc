@@ -1,13 +1,15 @@
 // header
 #nlcstar--nav-wrapper {
     z-index: 2;
-    text-align: center;
-    display: flex;
-    width: 100%;
+    //text-align: center;
+    // justify-content: space-around;
+    // align-items: center;
+    //width: 100%;
     opacity: 0;
     transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
-    margin: 0 10px 35px 10px;
-    padding: 25px 25px 0 25px;
+    margin: 0;
+    padding: 25px 0 0 0;
+    width: 100%;
     transform: translateY(-25px);
     &.animate {
         transform: translateY(0px);
@@ -16,9 +18,16 @@
         //transition: all .2s ease-in-out;
     }
     @media screen and (min-width: 760px) {
+        z-index: 2;
+        text-align: center;
         display: flex;
-        padding: 50px 25px 35px 25px;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
+        opacity: 0;
+        transition: all .6s cubic-bezier(0.65, 0.05, 0.36, 1);
+        margin: 0 10px 35px 10px;
+        padding: 50px 25px 35px 25px;
     }
     @media screen and (min-width: 980px) {
         //margin: 55px auto 36px auto;

@@ -75,7 +75,7 @@
             }
         }
     }
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 760px) {
         opacity: 1;
         display: flex;
         justify-content: space-around;
@@ -93,5 +93,5 @@
 .navbar-burger {
     position: relative;
     margin: 0;
-    //right: 10px;
+    display: inline-block;
 }

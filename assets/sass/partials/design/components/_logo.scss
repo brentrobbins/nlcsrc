@@ -2,10 +2,23 @@
 .nlcstar--site-logo {
     //width: auto;
     //margin-right: auto;
-    transform: translateY(4px) scale(.8);
-    //margin: 0 auto 0 25px;
-    margin-right: auto;
-    @media screen and (min-width: 760px) and (max-width: 1223px) {}
+    // transform: translateY(4px) scale(.6);
+    // //margin: 0 auto 0 25px;
+    // display: inline-block;
+    // margin: 0;
+    // width: 100%;
+    // position: relative;
+    transform: translateY(-9px) scale(0.7);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 82%;
+    position: relative;
+    @media screen and (min-width: 760px) {
+        width: auto;
+        margin-right: auto;
+        display: block;
+    }
     @media screen and (min-width: 1224px) {
         width: auto;
     }
