@@ -80,6 +80,7 @@ gulp.task('html', function() {
 	gulp.start('root_images');
 	gulp.start('fonts');
 	gulp.start('video');
+	gulp.start('pdfs');
 	return gulp.src(html_input).pipe(validator()).pipe(gulp.dest(html_output)).pipe(browserSync.stream());
 });
 gulp.task('root_images', function() {
@@ -90,6 +91,9 @@ gulp.task('images', function() {
 });
 gulp.task('video', function() {
 	return gulp.src([ './assets/video/bg-video.mp4' ]).pipe(gulp.dest('_site/assets/video'));
+});
+gulp.task('pdfs', function() {
+	return gulp.src([ './assets/pdfs/**/*.{pdf}' ]).pipe(gulp.dest('_site/assets/pdfs'));
 });
 
 gulp.task('fonts', function() {
