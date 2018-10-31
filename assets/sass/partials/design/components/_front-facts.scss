@@ -44,7 +44,7 @@
         transform: translateY(0px);
         //transform: translateY(-50px);
         margin-left: auto;
-        margin-right: -25px;
+        //margin-right: -25px;
         z-index: 0;
         &.animate {
             //transform: translateY(100px);
@@ -80,7 +80,7 @@
     aside {
         color: #fff;
         width: auto;
-        margin: 0 25px;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,7 +89,7 @@
         z-index: 1;
         transform: translateY(-100px);
         .aside-inner-wrap {
-            padding: 50px;
+            padding: 30px;
             width: auto;
         }
         .data-wrap {
@@ -98,21 +98,21 @@
         }
         .number {
             font-family: 'Gotham-Black--Regular';
-            font-size: 175px;
+            font-size: 118px;
         }
         .suffix-percent {
             font-family: 'Gotham-Black--Regular';
-            font-size: 72px;
+            font-size: 64px;
         }
         .suffix-text {
             font-family: 'Gotham-Black--Regular';
-            font-size: 36px;
+            font-size: 34px;
         }
         p {
             color: #fff;
             font-family: 'Klinic-Slab--Book';
-            font-size: 30px;
-            line-height: 36px;
+            font-size: 24px;
+            line-height: inherit;
             margin-top: 30px;
             width: 100%;
         }
@@ -180,7 +180,7 @@
     }
     figure {
         margin: 0 auto;
-        width: 50%;
+        width: 90%;
         height: auto;
         img {
             object-fit: contain;
