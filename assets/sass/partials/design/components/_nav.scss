@@ -38,6 +38,8 @@
     opacity: 0;
     // height: 100%;
     li {
+        margin: 0;
+        line-height: initial;
         display: inline-block;
         margin-right: 25px;
         &:last-child {

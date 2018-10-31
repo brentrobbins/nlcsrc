@@ -1,18 +1,39 @@
 // footer
 .nlcstar--site-footer .content {
-    max-width: 1238px;
+    width: auto;
     margin: 50px auto 50px auto;
-    padding: 0 30px;
+    //padding: 0 30px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    text-align: center;
+    .footer-text {
+        width: 100%;
+    }
     p {
         margin: 0;
+        text-align: center;
     }
     .logo {
-        margin: 0 48px 0 0;
+        margin: 0 auto 20px auto;
+    }
+    @media screen and (min-width: 920px) {
+        text-align: left;
+        max-width: 1238px;
+        margin: 200px 25px 25px 25px;
+        .logo {
+            margin: 0 48px 0 0;
+            display: inline-block;
+        }
+        .footer-text {
+            display: inline-block;
+            width: auto;
+        }
+        p {
+            text-align: left;
+        }
     }
     @media screen and (min-width: 1288px) {
+        max-width: 1238px;
         margin: 200px auto 70px auto;
     }
 }
