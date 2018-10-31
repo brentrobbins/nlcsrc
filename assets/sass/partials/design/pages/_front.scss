@@ -54,7 +54,7 @@ body.front {
     padding: 25px 25px;
     width: auto;
     // margin: 0 auto 70px auto;
-    margin: 0 25px 25px 25px;
+    margin: 25px;
     opacity: 0;
     transform: translateY(25px);
     &.animate {
@@ -113,8 +113,9 @@ body.front {
         }
     }
     @media screen and (min-width: 980px) {
-        height: 100vh;
-        padding: 0 90px;
+        //height: 100vh;
+        height: initial;
+        padding: 90px;
         max-width: 1240px;
         h1 {
             font-size: 64px;
@@ -134,6 +135,6 @@ body.front {
             font-size: 36px;
             line-height: 44px;
         }
-        padding: 0 190px;
+        padding: 90px 190px;
     }
 }

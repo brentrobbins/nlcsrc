@@ -262,7 +262,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 969px) {
+@media screen and (min-width: 600px) {
     .nlcstar--front-facts {
         header {
             h3 {
@@ -289,21 +289,23 @@
             justify-content: center;
             header {
                 flex: 1;
+                width: auto;
             }
             figure {
                 flex: 1;
                 height: 100%;
+                width: auto;
                 img {
                     object-fit: contain;
                 }
             }
-            #fact7 {
-                height: 700px;
-                margin-top: 200px;
-                padding: 30px 40px 0 40px;
-                header {
-                    background: none;
-                }
+        }
+        #fact7 {
+            height: 700px;
+            margin-top: 200px;
+            padding: 30px 40px 0 40px;
+            header {
+                background: none;
             }
         }
     }
@@ -404,7 +406,6 @@
             bottom: 0;
             color: #fff;
             width: 45%;
-            height: 472px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -420,21 +421,21 @@
             }
             .number {
                 font-family: 'Gotham-Black--Regular';
-                font-size: 175px;
+                font-size: 145px;
             }
             .suffix-percent {
                 font-family: 'Gotham-Black--Regular';
-                font-size: 72px;
+                font-size: 62px;
             }
             .suffix-text {
                 font-family: 'Gotham-Black--Regular';
-                font-size: 36px;
+                font-size: 30px;
             }
             p {
                 color: #fff;
                 font-family: 'Klinic-Slab--Book';
-                font-size: 30px;
-                line-height: 36px;
+                font-size: 24px;
+                line-height: inherit;
                 margin-top: 30px;
                 width: 100%;
             }
@@ -454,10 +455,12 @@
         background-position: center bottom;
         height: 1400px;
         aside {
-            margin-top: 825px;
+            margin-top: 835px;
+            bottom: auto;
         }
     }
     &#fact2 {
+        background-position: center center;
         aside {
             margin-top: 410px;
         }
@@ -472,10 +475,11 @@
         }
     }
     &#fact5 {
-        background-position: center center;
+        background-position: center bottom;
         margin-top: 300px;
         aside {
-            margin-top: 500px;
+            margin-top: 600px;
+            bottom: auto;
         }
     }
     &#fact6 {
@@ -492,6 +496,7 @@
         header {
             margin: 0 0 0 70px;
             width: 50%;
+            background: none;
             h3 {
                 margin: 0;
             }
@@ -650,7 +655,7 @@
     }
     &#fact2 {
         aside {
-            margin-top: 410px;
+            margin-top: 500px;
         }
     }
     &#fact3 {
