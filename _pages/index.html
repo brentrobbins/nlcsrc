@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-    <script src="/assets/js/prod/modernizr.js"></script>
+    
 
 </head>
 
@@ -92,7 +92,7 @@
 
                 </header>
                 <figure>
-                    <img src="/assets/images/recycling-is-a-success-story.jpg" alt="Recycling Is A Success Story" />
+                    <img class="lazy" data-src="/assets/images/recycling-is-a-success-story.jpg" alt="Recycling Is A Success Story" />
                 </figure>
                 <aside>
                     <div class="aside-inner-wrap">
@@ -117,7 +117,7 @@
                     <a href="/the-challenge/" class="cta">Read more about challenges</a>
                 </header>
                 <figure>
-                    <img src="/assets/images/challenges-we-face.jpg" alt="Challenges We Face">
+                    <img class="lazy" data-src="/assets/images/challenges-we-face.jpg" alt="Challenges We Face">
                     <p class="cite">Spencer Platt/Getty Images</p>
                 </figure>
                 <aside>
@@ -155,7 +155,7 @@
                         we do, too.</p>
                 </header>
                 <figure>
-                    <img src="/assets/images/what-if-we-stop-recycling.jpg" alt="What If We Stop Recycling?">
+                    <img class="lazy" data-src="/assets/images/what-if-we-stop-recycling.jpg" alt="What If We Stop Recycling?">
                     <p class="cite">Natalie Behring/Getty Images</p>
                 </figure>
                 <aside>
@@ -176,7 +176,7 @@
                     <a href="/recommendations/#circular-economy" class="cta">Read more about circular economy</a>
                 </header>
                 <figure>
-                    <img src="/assets/images/to-fix-this-now.jpg" alt="What Can We Do To Fix This Now?">
+                    <img class="lazy" data-src="/assets/images/to-fix-this-now.jpg" alt="What Can We Do To Fix This Now?">
                 </figure>
                 <aside>
                     <div class="aside-inner-wrap">
@@ -197,7 +197,7 @@
                     <a href="/recommendations/" class="cta">Read more about recommendations</a>
                 </header>
                 <figure class="noBackgroundColor">
-                    <img src="/assets/images/rethinking-current-strategies.jpg" alt="Rethinking Current Strategies">
+                    <img class="lazy" data-src="/assets/images/rethinking-current-strategies.jpg" alt="Rethinking Current Strategies">
                 </figure>
             </section>
 
@@ -244,19 +244,21 @@
     <!-- Remove if you use Critical CSS-->
     <!-- <link rel="stylesheet" href="/assets/css/style.css" media="screen"> -->
 
-    <script src="/assets/js/prod/countUp.js"></script>
-
-    <script src="/assets/js/prod/waypoints.js"></script>
-
     <link rel="stylesheet" href="/assets/css/chartist.css" />
 
+    <script src="/assets/js/prod/countUp.js"></script>
+    <script src="/assets/js/prod/waypoints.js"></script>
     <script src="/assets/js/prod/chartist.js"></script>
     <script src="/assets/js/prod/chartist-plugin-legend.js"></script>
-    <!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> -->
-
     <script src="/assets/js/prod/countUp.js"></script>
-
     <script src="/assets/js/prod/frontPage.js"></script>
+    <script src="/assets/js/prod/lazyload.min.js"></script>
+    <script>
+        var myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
+
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" async></script> -->
     <!-- <script>

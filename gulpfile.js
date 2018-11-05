@@ -77,7 +77,7 @@ gulp.task('html', function() {
 	gulp.start('fonts');
 	gulp.start('video');
 	gulp.start('pdfs');
-	return gulp.src(html_input).pipe(validator()).pipe(gulp.dest(html_output)).pipe(browserSync.stream());
+	return gulp.src(html_input).pipe(gulp.dest(html_output)).pipe(browserSync.stream());
 });
 gulp.task('root_images', function() {
 	return gulp.src([ './favicon.png' ]).pipe(gulp.dest('_site'));
