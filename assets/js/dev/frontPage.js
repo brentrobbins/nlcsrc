@@ -308,7 +308,7 @@ function ready() {
 
 			loadChart();
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 
 	/**
@@ -333,7 +333,7 @@ function ready() {
 			document.querySelector('#fact1 figure').classList.add('animate');
 			firstNumberAnimate.start();
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 	var waypoint2 = new Waypoint({
 		element: document.getElementById('secondNumber'),
@@ -342,7 +342,7 @@ function ready() {
 			document.querySelector('#fact2 figure').classList.add('animate');
 			secondNumberAnimate.start();
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 
 	var waypoint4 = new Waypoint({
@@ -352,7 +352,7 @@ function ready() {
 			document.querySelector('#fact4 figure').classList.add('animate');
 			fourthNumberAnimate.start();
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 	var waypoint5 = new Waypoint({
 		element: document.getElementById('fifthNumber'),
@@ -361,7 +361,7 @@ function ready() {
 			document.querySelector('#fact5 figure').classList.add('animate');
 			fifthNumberAnimate.start();
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 	var waypoint6 = new Waypoint({
 		element: document.getElementById('fact6'),
@@ -369,7 +369,7 @@ function ready() {
 			console.log('Waypoint element id: ' + this.element.id);
 			document.querySelector('#fact6 figure').classList.add('animate');
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 	var waypoint7 = new Waypoint({
 		element: document.getElementById('fact7'),
@@ -377,7 +377,7 @@ function ready() {
 			console.log('Waypoint element id: ' + this.element.id);
 			document.querySelector('#fact7').classList.add('animate');
 		},
-		offset: '80%'
+		offset: '90%'
 	});
 }
 
