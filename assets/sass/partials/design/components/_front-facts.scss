@@ -36,6 +36,7 @@
         }
     }
     figure {
+        margin-top: 20px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -176,8 +177,6 @@
 }
 
 #fact6 {
-    //height: 800px;
-    // margin-top: 200px;
     margin-top: 100px;
     header {
         width: 100%;
@@ -197,12 +196,9 @@
     margin-top: 100px;
     background: url('/assets/images/the-way-forward.jpg') no-repeat right bottom;
     background-size: cover;
-    // height: 700px;
-    //padding: 10px;
     header {
-        //width: 100%;
-        background: rgba(217, 214, 209, .8);
-        padding: 20px 20px 0 20px;
+        background: rgba(217, 214, 209, .85);
+        padding: 20px 30px;
         margin: 10px auto;
         position: relative;
         h3 {
@@ -406,7 +402,7 @@
             }
             .number {
                 font-family: 'Gotham-Black--Regular';
-                font-size: 145px;
+                font-size: 120px;
             }
             .suffix-percent {
                 font-family: 'Gotham-Black--Regular';
