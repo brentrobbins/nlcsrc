@@ -1,0 +1,26 @@
+.nlcstar--front-facts#fact4 {
+  margin-top: 150px;
+  background-size: contain;
+}
+@media screen and (min-width: 600px) {
+  .nlcstar--front-facts#fact4 {
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .nlcstar--front-facts#fact4 {
+    margin-top: 300px;
+    aside {
+        top: 740px;
+        height: 472px;
+    }
+  }
+}
+@media screen and (min-width: 1338px) {
+  .nlcstar--front-facts#fact4 {
+    margin-top: 300px;
+    aside {
+        top: 700px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.nlcstar--front-facts#fact7 {
+  margin-top: 100px;
+  background: url('/assets/images/the-way-forward.jpg') no-repeat right bottom;
+  background-size: cover;
+  header {
+      background: rgba(217, 214, 209, .85);
+      padding: 20px 30px;
+      margin: 10px auto;
+      position: relative;
+      h3 {
+          margin: 0;
+      }
+      p {
+          color: #3f4041;
+      }
+  }
+  &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #faf8f9;
+      opacity: 1;
+      transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+  &.animate:before {
+      opacity: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nlcstar--front-facts#fact7 {
+    margin-top: 200px;
+    padding: 30px 40px 40px 40px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .nlcstar--front-facts#fact7 {
+    height: auto;
+    padding: 70px;
+    header {
+        margin: 0 0 0 25px;
+        width: 60%;
+        background: none;
+        h3 {
+            margin: 0;
+        }
+        p {
+            color: #6a6c6e;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #faf8f9;
+        opacity: 1;
+        transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+    &.animate:before {
+        opacity: 0;
+    }
+  }
+}
+@media screen and (min-width: 1338px) {
+  .nlcstar--front-facts#fact7 {
+    height: auto;
+    padding: 120px 70px 70px 70px;
+    header {
+        margin: 0;
+        width: 60%;
+        h3 {
+            margin: 0;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #faf8f9;
+        opacity: 1;
+        transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+    &.animate:before {
+        opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.nlcstar--front-facts#fact6 {
+  margin-top: 100px;
+  header {
+      width: 100%;
+      position: relative;
+  }
+  figure {
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+      img {
+          object-fit: contain;
+      }
+  }
+}
+@media screen and (min-width: 600px) {
+
+}
+@media screen and (min-width: 970px) {
+  .nlcstar--front-facts#fact6 {
+    height: 800px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    header {
+        flex: 1;
+        width: 50%;
+        position: absolute;
+    }
+    figure {
+        flex: 1;
+        // height: 100%;
+        width: 50%;
+        position: absolute;
+        img {
+            object-fit: contain;
+        }
+    }
+  }
+}
+@media screen and (min-width: 1338px) {
+  .nlcstar--front-facts#fact6 {
+    height: 800px;
+    margin-top: 200px;
+    figure {
+        margin-top: 0;
+    }
+  }
+}

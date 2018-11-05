@@ -144,85 +144,6 @@
     }
 }
 
-#fact1 {
-    background-position: center bottom;
-    background-size: contain;
-}
-
-#fact2 {
-    background-position: center center;
-    background-size: 50%;
-}
-
-#fact3 {
-    header {
-        width: 100%;
-    }
-    //margin-top: 100px;
-    p.cite {
-        display: block;
-        transform: translateY(40px);
-        font-size: 14px;
-    }
-}
-
-#fact4 {
-    margin-top: 150px;
-    background-size: contain;
-}
-
-#fact5 {
-    margin-top: 100px;
-    background-position: center 300px;
-}
-
-#fact6 {
-    margin-top: 100px;
-    header {
-        width: 100%;
-        position: relative;
-    }
-    figure {
-        margin: 0 auto;
-        width: 90%;
-        height: auto;
-        img {
-            object-fit: contain;
-        }
-    }
-}
-
-#fact7 {
-    margin-top: 100px;
-    background: url('/assets/images/the-way-forward.jpg') no-repeat right bottom;
-    background-size: cover;
-    header {
-        background: rgba(217, 214, 209, .85);
-        padding: 20px 30px;
-        margin: 10px auto;
-        position: relative;
-        h3 {
-            margin: 0;
-        }
-        p {
-            color: #3f4041;
-        }
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #faf8f9;
-        opacity: 1;
-        transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-    }
-    &.animate:before {
-        opacity: 0;
-    }
-}
 
 .nlcstar--theme-puerto-rico {
     aside {
@@ -279,24 +200,9 @@
                 font-size: 18px;
             }
         }
-        &#fact4 {
-            margin-top: 200px;
-        }
-        &#fact5 {
-            margin-top: 200px;
-        }
-        &#fact7 {
-            margin-top: 200px;
-            padding: 30px 40px 40px 40px;
-        }
     }
 }
 
-// @media screen and (min-width: 980px) and (max-width: 1337px) {
-//     .nlcstar--front-facts {
-//         header {}
-//     }
-// }
 @media screen and (min-width: 970px) {
     .nlcstar--front-facts {
         display: flex;
@@ -432,94 +338,6 @@
             }
         }
     }
-    &#fact1 {
-        background-position: center bottom;
-        background-size: initial;
-        height: 1400px;
-        aside {
-            margin-top: 835px;
-            bottom: auto;
-        }
-    }
-    &#fact2 {
-        background-position: left center;
-        background-size: 90%;
-        height: 1200px;
-        aside {
-            top: 700px;
-            height: 472px;
-        }
-    }
-    &#fact3 {
-        margin-top: 200px;
-    }
-    &#fact4 {
-        margin-top: 300px;
-        aside {
-            top: 740px;
-            height: 472px;
-        }
-    }
-    &#fact5 {
-        background-position: center bottom;
-        margin-top: 300px;
-        aside {
-            margin-top: 600px;
-            bottom: auto;
-        }
-    }
-    &#fact6 {
-        //height: 800px;
-        height: 800px;
-        margin-top: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        header {
-            flex: 1;
-            width: 50%;
-            position: absolute;
-        }
-        figure {
-            flex: 1;
-            // height: 100%;
-            width: 50%;
-            position: absolute;
-            img {
-                object-fit: contain;
-            }
-        }
-    }
-    &#fact7 {
-        //padding: 30px 40px 0 40px;
-        height: auto;
-        padding: 70px;
-        header {
-            margin: 0 0 0 25px;
-            width: 60%;
-            background: none;
-            h3 {
-                margin: 0;
-            }
-            p {
-                color: #6a6c6e;
-            }
-        }
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #faf8f9;
-            opacity: 1;
-            transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-        }
-        &.animate:before {
-            opacity: 0;
-        }
-    }
 }
 
 @media screen and (min-width: 1338px) {
@@ -650,66 +468,5 @@
             }
         }
     }
-    &#fact1 {
-        background-position: center bottom;
-        height: 1400px;
-        aside {
-            margin-top: 825px;
-        }
-    }
-    &#fact2 {
-        background-position: center bottom;
-        background-size: contain;
-        aside {
-            top: 560px;
-        }
-    }
-    &#fact3 {
-        margin-top: 200px;
-    }
-    &#fact4 {
-        margin-top: 300px;
-        aside {
-            top: 700px;
-        }
-    }
-    &#fact5 {
-        background-position: center bottom;
-        margin-top: 300px;
-        aside {
-            margin-top: 500px;
-        }
-    }
-    &#fact6 {
-        height: 800px;
-        margin-top: 200px;
-        figure {
-            margin-top: 0;
-        }
-    }
-    .nlcstar--front-facts#fact7 {
-        height: auto;
-        padding: 120px 70px 70px 70px;
-        header {
-            margin: 0;
-            width: 60%;
-            h3 {
-                margin: 0;
-            }
-        }
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #faf8f9;
-            opacity: 1;
-            transition: all 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-        }
-        &.animate:before {
-            opacity: 0;
-        }
-    }
 }
+@import 'facts/facts';

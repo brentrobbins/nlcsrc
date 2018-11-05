@@ -1,0 +1,25 @@
+.nlcstar--front-facts#fact2 {
+  background-position: center center;
+  background-size: 50%;
+}
+
+@media screen and (min-width: 970px) {
+  .nlcstar--front-facts#fact2 {
+    background-position: left center;
+    background-size: 90%;
+    height: 1200px;
+    aside {
+        top: 700px;
+        height: 472px;
+    }
+  }
+}
+@media screen and (min-width: 1338px) {
+  .nlcstar--front-facts#fact2 {
+    background-position: center bottom;
+    background-size: contain;
+    aside {
+        top: 560px;
+    }
+  }
+}
