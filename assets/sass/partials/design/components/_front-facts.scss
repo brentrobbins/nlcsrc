@@ -144,11 +144,13 @@
 }
 
 #fact1 {
-    background-position: center center;
+    background-position: center bottom;
+    background-size: contain;
 }
 
 #fact2 {
     background-position: center center;
+    background-size: 50%;
 }
 
 #fact3 {
@@ -165,7 +167,7 @@
 
 #fact4 {
     margin-top: 150px;
-    background-size: auto;
+    background-size: contain;
 }
 
 #fact5 {
@@ -272,7 +274,7 @@
     .nlcstar--front-facts {
         header {
             h3 {
-                font-size: 58px;
+                font-size: 54px;
                 line-height: 64px;
             }
         }
@@ -436,6 +438,7 @@
     }
     &#fact1 {
         background-position: center bottom;
+        background-size: initial;
         height: 1400px;
         aside {
             margin-top: 835px;
@@ -443,9 +446,12 @@
         }
     }
     &#fact2 {
-        background-position: center center;
+        background-position: left center;
+        background-size: 90%;
+        height: 1200px;
         aside {
-            margin-top: 410px;
+            top: 700px;
+            height: 472px;
         }
     }
     &#fact3 {
@@ -454,7 +460,8 @@
     &#fact4 {
         margin-top: 300px;
         aside {
-            margin: 420px 0 0 0;
+            top: 740px;
+            height: 472px;
         }
     }
     &#fact5 {
@@ -655,8 +662,10 @@
         }
     }
     &#fact2 {
+        background-position: center bottom;
+        background-size: contain;
         aside {
-            margin-top: 640px;
+            top: 560px;
         }
     }
     &#fact3 {
@@ -665,7 +674,7 @@
     &#fact4 {
         margin-top: 300px;
         aside {
-            margin: 660px 0 0 0
+            top: 700px;
         }
     }
     &#fact5 {
