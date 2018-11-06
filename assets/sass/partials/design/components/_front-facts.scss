@@ -144,7 +144,6 @@
     }
 }
 
-
 .nlcstar--theme-puerto-rico {
     aside {
         @include background-opacity($FreeSpeechAquamarine);
@@ -431,30 +430,30 @@
             .aside-inner-wrap {
                 padding: 50px;
                 width: 100%;
-            }
-            .data-wrap {
-                border-bottom: 1px solid #fff;
-                width: 100%;
-            }
-            .number {
-                font-family: 'Gotham-Black--Regular';
-                font-size: 175px;
-            }
-            .suffix-percent {
-                font-family: 'Gotham-Black--Regular';
-                font-size: 72px;
-            }
-            .suffix-text {
-                font-family: 'Gotham-Black--Regular';
-                font-size: 36px;
-            }
-            p {
-                color: #fff;
-                font-family: 'Klinic-Slab--Book';
-                font-size: 30px;
-                line-height: 36px;
-                margin-top: 30px;
-                width: 100%;
+                .data-wrap {
+                    border-bottom: 1px solid #fff;
+                    width: 100%;
+                }
+                .number {
+                    font-family: 'Gotham-Black--Regular';
+                    font-size: 175px;
+                }
+                .suffix-percent {
+                    font-family: 'Gotham-Black--Regular';
+                    font-size: 72px;
+                }
+                .suffix-text {
+                    font-family: 'Gotham-Black--Regular';
+                    font-size: 36px;
+                }
+                p {
+                    color: #fff;
+                    font-family: 'Klinic-Slab--Book';
+                    font-size: 30px;
+                    line-height: 36px;
+                    margin-top: 30px;
+                    width: 100%;
+                }
             }
         }
         &.chart {
@@ -469,4 +468,5 @@
         }
     }
 }
+
 @import 'facts/facts';

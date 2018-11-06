@@ -7,7 +7,7 @@ function ready() {
 
 	// Lazy load images
 	var myLazyLoad = new LazyLoad({
-		elements_selector: ".lazy"
+		elements_selector: '.lazy'
 	});
 
 	/**
@@ -328,7 +328,7 @@ function ready() {
 	};
 	var firstNumberAnimate = new CountUp('firstNumber', 0, 34.7, 1, 1.5, options);
 	var secondNumberAnimate = new CountUp('secondNumber', 0, 6.8, 1, 2, options);
-	var fourthNumberAnimate = new CountUp('fourthNumber', 0, 15, 0, 2.5, options);
+	var fourthNumberAnimate = new CountUp('fourthNumber', 0, 16, 0, 2.5, options);
 	var fifthNumberAnimate = new CountUp('fifthNumber', 0, 515, 0, 2.5, options);
 
 	var waypoint1 = new Waypoint({
