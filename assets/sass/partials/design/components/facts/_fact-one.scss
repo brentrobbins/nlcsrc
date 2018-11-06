@@ -1,25 +1,29 @@
 .nlcstar--front-facts#fact1 {
-  background-position: center bottom;
-  background-size: contain;
+    background-position: center bottom;
+    background-size: contain;
+    margin-top: 0;
+    padding-top: 50px;
 }
 
 @media screen and (min-width: 970px) {
-  .nlcstar--front-facts#fact1 {
-    background-position: center bottom;
-    background-size: initial;
-    height: 1400px;
-    aside {
-        margin-top: 835px;
-        bottom: auto;
+    .nlcstar--front-facts#fact1 {
+        background-position: center bottom;
+        background-size: initial;
+        height: 1400px;
+        padding-top: 150px;
+        aside {
+            margin-top: 835px;
+            bottom: auto;
+        }
     }
-  }
 }
+
 @media screen and (min-width: 1338px) {
-  .nlcstar--front-facts#fact1 {
-    background-position: center bottom;
-    height: 1400px;
-    aside {
-        margin-top: 825px;
+    .nlcstar--front-facts#fact1 {
+        background-position: center bottom;
+        height: 1400px;
+        aside {
+            margin-top: 825px;
+        }
     }
-  }
 }
