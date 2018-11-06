@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
+var cssnano = require('gulp-cssnano');
+const htmlmin = require('gulp-htmlmin');
 var size = require('gulp-filesize');
 var plumber = require('gulp-plumber');
 var validator = require('gulp-html');
@@ -61,11 +62,10 @@ gulp.task('sass', function() {
 	return (gulp
 			.src(style_input)
 			.pipe(plumber())
-			// .pipe(sourcemaps.init())
 			.pipe(sass(sassOptions))
-			// .pipe(sourcemaps.write())
 			.pipe(autoprefixer(autoprefixerOptions))
 			.pipe(plumber.stop())
+			.pipe(cssnano())
 			.pipe(size())
 			.pipe(gulp.dest(style_output))
 			.pipe(browserSync.stream()) );
@@ -77,7 +77,10 @@ gulp.task('html', function() {
 	gulp.start('fonts');
 	gulp.start('video');
 	gulp.start('pdfs');
-	return gulp.src(html_input).pipe(gulp.dest(html_output)).pipe(browserSync.stream());
+	return gulp.src(html_input)
+	.pipe(htmlmin({ collapseWhitespace: true }))
+	.pipe(gulp.dest(html_output))
+	.pipe(browserSync.stream());
 });
 gulp.task('root_images', function() {
 	return gulp.src([ './favicon.png' ]).pipe(gulp.dest('_site'));
