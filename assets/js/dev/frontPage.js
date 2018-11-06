@@ -5,6 +5,11 @@ function ready() {
 	// do your stuff
 	console.log('Front Page is locked and loaded 🚀');
 
+	// Lazy load images
+	var myLazyLoad = new LazyLoad({
+		elements_selector: ".lazy"
+	});
+
 	/**
 	* Animate Front Page
 	*/
